@@ -14,6 +14,7 @@
 		61ACD1EF2986C8A000F9FFB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACD1EE2986C8A000F9FFB9 /* ContentView.swift */; };
 		61F9F861299013E100179EE1 /* Blobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F860299013E100179EE1 /* Blobs.swift */; };
 		61FF285229903C3B000B291C /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285129903C3B000B291C /* UtilityExtensions.swift */; };
+		61FF285429903E21000B291C /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285329903E21000B291C /* Diamond.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		61ACD1EE2986C8A000F9FFB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		61F9F860299013E100179EE1 /* Blobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blobs.swift; sourceTree = "<group>"; };
 		61FF285129903C3B000B291C /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
+		61FF285329903E21000B291C /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		61FF285029903C26000B291C /* Card Shades */ = {
 			isa = PBXGroup;
 			children = (
+				61FF285329903E21000B291C /* Diamond.swift */,
 			);
 			path = "Card Shades";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61FF285429903E21000B291C /* Diamond.swift in Sources */,
 				61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */,
 				61F9F861299013E100179EE1 /* Blobs.swift in Sources */,
 				61ACD1ED2986C86700F9FFB9 /* Trapezoid.swift in Sources */,
