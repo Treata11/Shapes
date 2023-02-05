@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Heart: Shape {
     func path(in rect: CGRect) -> Path {
-        
         let (x, y, width, height) = rect.centeredSquare.flatten()
         let lowerPoint = CGPoint(x: x + width / 2, y: (y + height))
         
