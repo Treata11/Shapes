@@ -49,7 +49,7 @@ struct Pentagon: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-                let width: CGFloat = ceil(min(geometry.size.width, geometry.size.height))
+                let width: CGFloat = ceil(min(geometry.size.width, geometry.size.height)) / 2
                 
                 let height = width
 //                let xScale: CGFloat = 1
@@ -87,7 +87,7 @@ struct Pentagon: View {
                 endPoint: UnitPoint(x: 0.5, y: 0.6)
                 ))
         }
-        .aspectRatio(0.4, contentMode: .fit)
+        .aspectRatio(1, contentMode: .fit)
     }
     static let gradientStart = Color(red: 120.0 / 255, green: 239.0 / 255, blue: 221.0 / 255)
     static let gradientEnd = Color(red: 172.0 / 255, green: 139.0 / 255, blue: 190.0 / 255)

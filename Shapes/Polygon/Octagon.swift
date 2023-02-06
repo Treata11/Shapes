@@ -15,7 +15,7 @@ struct OctagonParameters {
         let control: CGPoint
     }
     
-    static let adjustment: CGFloat = 0.0
+    static let adjustment: CGFloat = -0.30666
     
     static let segments = [
         Segment(
@@ -65,7 +65,7 @@ struct Octagon: View {
         GeometryReader { geometry in
             Path { path in
                 
-                let width: CGFloat = ceil(max(geometry.size.width, geometry.size.height))
+                let width: CGFloat = min(geometry.size.width, geometry.size.height) / 2
                 let height = width
                 
                 path.move(
@@ -89,7 +89,7 @@ struct Octagon: View {
                 endPoint: UnitPoint(x: 0.5, y: 0.6)
                 ))
         }
-        .aspectRatio(0.1, contentMode: .fit)
+        .aspectRatio(1, contentMode: .fit)
     }
     static let gradientStart = Color(red: 30 / 255, green: 180 / 255, blue: 220 / 255)
     static let gradientEnd = Color(red: 172.0 / 255, green: 139.0 / 255, blue: 255 / 255)
