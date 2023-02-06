@@ -49,7 +49,7 @@ struct Pentagon: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-                var width: CGFloat = min(geometry.size.width, geometry.size.height)
+                let width: CGFloat = ceil(min(geometry.size.width, geometry.size.height))
                 
                 let height = width
 //                let xScale: CGFloat = 1
