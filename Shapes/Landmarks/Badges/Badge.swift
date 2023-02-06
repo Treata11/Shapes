@@ -37,3 +37,5 @@ struct Badge_Previews: PreviewProvider {
             .foregroundColor(.accentColor)
     }
 }
+
+/// https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes
