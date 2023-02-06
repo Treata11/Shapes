@@ -54,6 +54,5 @@ struct HexagonParameters {
     ]
     // Add an adjustment value that lets you tune the shape of the hexagon.
     /// adjustment ~ insetAmount
-    
 }
 
