@@ -12,7 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         Trapezoid(insetAmount: insetAmount)
-            .frame(width: 200, height: 100)
+            .frame(width: 350, height: 200)
             .onTapGesture {
                 withAnimation {
                     insetAmount = Double.random(in: 10...90)

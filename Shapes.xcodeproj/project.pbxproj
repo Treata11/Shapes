@@ -17,6 +17,7 @@
 		61FF285429903E21000B291C /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285329903E21000B291C /* Diamond.swift */; };
 		61FF2856299042B3000B291C /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF2855299042B3000B291C /* Heart.swift */; };
 		61FF285829904509000B291C /* Spade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285729904509000B291C /* Spade.swift */; };
+		61FF285A29904673000B291C /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285929904673000B291C /* Club.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		61FF285329903E21000B291C /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 		61FF2855299042B3000B291C /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		61FF285729904509000B291C /* Spade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spade.swift; sourceTree = "<group>"; };
+		61FF285929904673000B291C /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				61FF285329903E21000B291C /* Diamond.swift */,
 				61FF2855299042B3000B291C /* Heart.swift */,
 				61FF285729904509000B291C /* Spade.swift */,
+				61FF285929904673000B291C /* Club.swift */,
 			);
 			path = "Card Shades";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61FF285429903E21000B291C /* Diamond.swift in Sources */,
+				61FF285A29904673000B291C /* Club.swift in Sources */,
 				61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */,
 				61F9F861299013E100179EE1 /* Blobs.swift in Sources */,
 				61FF285829904509000B291C /* Spade.swift in Sources */,
