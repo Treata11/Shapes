@@ -52,21 +52,20 @@ struct Pentagon: View {
                 var width: CGFloat = min(geometry.size.width, geometry.size.height)
                 
                 let height = width
-                let xScale: CGFloat = 0.832
-                let xOffset = (width * (1.0 - xScale)) / 2.0
-                width *= xScale
+//                let xScale: CGFloat = 1
+//                let xOffset = 1.0
                 
-//                path.move(to: PentagonParameters.segments.first!.line)
+///                path.move(to: PentagonParameters.segments.first!.line)
                 path.move(
                     to: CGPoint(
-                        x: width * 1.0 + xOffset,
+                        x: width * 1.0,
                         y: height * (0.0 + PentagonParameters.adjustment)
                     )
                 )
                 PentagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
-                            x: width * segment.line.x + 0,
+                            x: width * segment.line.x,
                             y: height * segment.line.y
                         )
                     )
@@ -91,7 +90,7 @@ struct Pentagon: View {
         .aspectRatio(0.4, contentMode: .fit)
     }
     static let gradientStart = Color(red: 120.0 / 255, green: 239.0 / 255, blue: 221.0 / 255)
-    static let gradientEnd = Color(red: 172.0 / 255, green: 239.0 / 255, blue: 120.0 / 255)
+    static let gradientEnd = Color(red: 172.0 / 255, green: 139.0 / 255, blue: 190.0 / 255)
 }
 
 struct Pentagon_Previews: PreviewProvider {
@@ -101,25 +100,7 @@ struct Pentagon_Previews: PreviewProvider {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// MARK: - Old Approach
 
 //struct Pentagon: Shape {
 //
