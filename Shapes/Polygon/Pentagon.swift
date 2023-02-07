@@ -100,7 +100,7 @@ struct Pentagon_Previews: PreviewProvider {
     }
 }
 
-// MARK: - Old Approach
+// MARK: - Old Approach(es)
 
 //struct Pentagon: Shape {
 //
