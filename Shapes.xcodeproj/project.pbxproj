@@ -12,6 +12,7 @@
 		612C094D299117B900247E0F /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C094C299117B900247E0F /* HexagonParameters.swift */; };
 		612C094F29911B4500247E0F /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C094E29911B4500247E0F /* BadgeBackground.swift */; };
 		617017852991A3C200A1299E /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617017842991A3C200A1299E /* Hexagon.swift */; };
+		6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A14229943C3900AC9AA2 /* Schwastika.swift */; };
 		61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */; };
 		61ACD1E22986C83C00F9FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */; };
 		61ACD1E62986C83C00F9FFB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E52986C83C00F9FFB9 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		612C094C299117B900247E0F /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		612C094E29911B4500247E0F /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		617017842991A3C200A1299E /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		6191A14229943C3900AC9AA2 /* Schwastika.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schwastika.swift; sourceTree = "<group>"; };
 		61ACD1DA2986C83B00F9FFB9 /* Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesApp.swift; sourceTree = "<group>"; };
 		61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		61ACD1DC2986C83B00F9FFB9 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				6191A14229943C3900AC9AA2 /* Schwastika.swift */,
 				61DE5DBD2994121400CE1833 /* Polygram */,
 				612C094B2991179300247E0F /* Landmarks */,
 				612C094A2991046D00247E0F /* Polygon */,
@@ -243,6 +246,7 @@
 				61B0165B29915E5800CB820E /* Badge.swift in Sources */,
 				61DE5DBF2994123B00CE1833 /* Hexagram.swift in Sources */,
 				61FF285A29904673000B291C /* Club.swift in Sources */,
+				6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */,
 				61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */,
 				61DFD72C29918FDB0030971F /* Octagon.swift in Sources */,
 				61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */,
