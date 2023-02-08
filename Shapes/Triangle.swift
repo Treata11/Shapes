@@ -37,4 +37,3 @@ struct Triangle_Previews: PreviewProvider {
             .foregroundColor(.accentColor)
     }
 }
-
