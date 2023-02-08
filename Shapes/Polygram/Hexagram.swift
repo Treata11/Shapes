@@ -19,7 +19,8 @@ struct Hexagram: View {
             rotatedEquilateralTriangle
         }
         .aspectRatio(1.0, contentMode: .fit)
-    }g}
+    }
+}
 
 /// Segmential approach
 //struct HexagramParameters {
