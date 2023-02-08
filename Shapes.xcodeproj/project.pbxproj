@@ -21,6 +21,7 @@
 		61B0165929915D1700CB820E /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B0165829915D1700CB820E /* RotatedBadgeSymbol.swift */; };
 		61B0165B29915E5800CB820E /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B0165A29915E5800CB820E /* Badge.swift */; };
 		61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DBB2993F35500CE1833 /* Pentagram.swift */; };
+		61DE5DBF2994123B00CE1833 /* Hexagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DBE2994123B00CE1833 /* Hexagram.swift */; };
 		61DFD72C29918FDB0030971F /* Octagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DFD72B29918FDB0030971F /* Octagon.swift */; };
 		61F9F861299013E100179EE1 /* Blobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F860299013E100179EE1 /* Blobs.swift */; };
 		61FF285229903C3B000B291C /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285129903C3B000B291C /* UtilityExtensions.swift */; };
@@ -47,6 +48,7 @@
 		61B0165829915D1700CB820E /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		61B0165A29915E5800CB820E /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		61DE5DBB2993F35500CE1833 /* Pentagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagram.swift; sourceTree = "<group>"; };
+		61DE5DBE2994123B00CE1833 /* Hexagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagram.swift; sourceTree = "<group>"; };
 		61DFD72B29918FDB0030971F /* Octagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagon.swift; sourceTree = "<group>"; };
 		61F9F860299013E100179EE1 /* Blobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blobs.swift; sourceTree = "<group>"; };
 		61FF285129903C3B000B291C /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
@@ -73,7 +75,6 @@
 				612C09482990F66700247E0F /* Pentagon.swift */,
 				61DFD72B29918FDB0030971F /* Octagon.swift */,
 				617017842991A3C200A1299E /* Hexagon.swift */,
-				61DE5DBB2993F35500CE1833 /* Pentagram.swift */,
 			);
 			path = Polygon;
 			sourceTree = "<group>";
@@ -105,6 +106,7 @@
 		61ACD1DC2986C83B00F9FFB9 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				61DE5DBD2994121400CE1833 /* Polygram */,
 				612C094B2991179300247E0F /* Landmarks */,
 				612C094A2991046D00247E0F /* Polygon */,
 				61FF285029903C26000B291C /* Card Shades */,
@@ -139,6 +141,15 @@
 				61B0165A29915E5800CB820E /* Badge.swift */,
 			);
 			path = Badges;
+			sourceTree = "<group>";
+		};
+		61DE5DBD2994121400CE1833 /* Polygram */ = {
+			isa = PBXGroup;
+			children = (
+				61DE5DBB2993F35500CE1833 /* Pentagram.swift */,
+				61DE5DBE2994123B00CE1833 /* Hexagram.swift */,
+			);
+			path = Polygram;
 			sourceTree = "<group>";
 		};
 		61FF285029903C26000B291C /* Card Shades */ = {
@@ -224,6 +235,7 @@
 			files = (
 				61FF285429903E21000B291C /* Diamond.swift in Sources */,
 				61B0165B29915E5800CB820E /* Badge.swift in Sources */,
+				61DE5DBF2994123B00CE1833 /* Hexagram.swift in Sources */,
 				61FF285A29904673000B291C /* Club.swift in Sources */,
 				61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */,
 				61DFD72C29918FDB0030971F /* Octagon.swift in Sources */,
