@@ -80,7 +80,6 @@ struct HalfSchwastika: View {
                 }
             }
         }
-        .aspectRatio(1, contentMode: .fit)
     }
 }
 
@@ -100,6 +99,8 @@ struct Schwastika: View {
 struct 卐_Previews: PreviewProvider {
     static var previews: some View {
         Schwastika()
-            .foregroundColor(.orange)
+            .foregroundColor(.red)
+            .rotationEffect(Angle(degrees: 45))
+            .scaleEffect(0.7)
     }
 }
