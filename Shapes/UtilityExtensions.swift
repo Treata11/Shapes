@@ -30,8 +30,9 @@ extension CGRect {
 }
 
 extension Angle {
+    static let A45 = A90 / 2
     static let A90 = Angle(radians: .pi/2)  // 90 degrees
-    static let A180 = Angle(radians: .pi)   // 180 degrees
+    static let A180 = A90 * 2  // 180 degrees
     static let A270 = A90 * 3   // 270 degrees
     static let A360 = A180 * 2  // 360 degrees
 }

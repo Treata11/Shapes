@@ -22,7 +22,8 @@ struct Hexagram: View {
     }
 }
 
-/// Segmential approach
+// MARK: - Segmential approach
+
 //struct HexagramParameters {
 //
 //    struct Segment {
