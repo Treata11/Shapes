@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6119F6622993DAE000DAC60F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119F6612993DAE000DAC60F /* Star.swift */; };
+		6128A6E92995008B003ED4FD /* Decagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6E82995008B003ED4FD /* Decagram.swift */; };
 		612C09492990F66700247E0F /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C09482990F66700247E0F /* Pentagon.swift */; };
 		612C094D299117B900247E0F /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C094C299117B900247E0F /* HexagonParameters.swift */; };
 		612C094F29911B4500247E0F /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C094E29911B4500247E0F /* BadgeBackground.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		6119F6612993DAE000DAC60F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		6128A6E82995008B003ED4FD /* Decagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decagram.swift; sourceTree = "<group>"; };
 		612C09482990F66700247E0F /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
 		612C094C299117B900247E0F /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		612C094E29911B4500247E0F /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				6191A1442994431100AC9AA2 /* Octagram.swift */,
+				6128A6E82995008B003ED4FD /* Decagram.swift */,
 				61DE5DBB2993F35500CE1833 /* Pentagram.swift */,
 				61DE5DBE2994123B00CE1833 /* Hexagram.swift */,
 			);
@@ -254,6 +257,7 @@
 				61DFD72C29918FDB0030971F /* Octagon.swift in Sources */,
 				6191A1452994431100AC9AA2 /* Octagram.swift in Sources */,
 				61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */,
+				6128A6E92995008B003ED4FD /* Decagram.swift in Sources */,
 				612C09492990F66700247E0F /* Pentagon.swift in Sources */,
 				612C094D299117B900247E0F /* HexagonParameters.swift in Sources */,
 				61B0165929915D1700CB820E /* RotatedBadgeSymbol.swift in Sources */,

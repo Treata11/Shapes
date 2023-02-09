@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PentagonParameters {
+    
     struct Segment {
         let line: CGPoint
         let curve: CGPoint
@@ -50,11 +51,9 @@ struct Pentagon: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-                let width: CGFloat = ceil(min(geometry.size.width, geometry.size.height)) / 2
                 
+                let width: CGFloat = ceil(min(geometry.size.width, geometry.size.height)) / 2
                 let height = width
-//                let xScale: CGFloat = 1
-//                let xOffset = 1.0
                 
 ///                path.move(to: PentagonParameters.segments.first!.line)
                 path.move(
