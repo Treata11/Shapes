@@ -14,7 +14,6 @@ struct Ring: View {
             let width = geometry.size.width
             
             Circle()
-                .inset(by: 20)
                 .strokeBorder(lineWidth: width / 13)
         }
         .aspectRatio(1.0, contentMode: .fit)

@@ -140,8 +140,8 @@
 		61ACD1DC2986C83B00F9FFB9 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				611594C429953E7E00E9E557 /* Symbols */,
 				611594C229953C5B00E9E557 /* Ring.swift */,
+				611594C429953E7E00E9E557 /* Symbols */,
 				613E0DE1299532E9005F77F3 /* Complex Views */,
 				6191A14229943C3900AC9AA2 /* Schwastika.swift */,
 				61DE5DBD2994121400CE1833 /* Polygram */,

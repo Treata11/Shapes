@@ -6,43 +6,63 @@
 //
 
 import SwiftUI
-
-struct GearsParameters {
     
-    struct Segment {
-            let line: CGPoint
-            let curve: CGPoint
-            let control: CGPoint
+struct UnrotatedSettingsGear: View {
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack {
+                let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
+                Ring()
+                    .scaleEffect(0.77)
+                Triangle()
+                    .aspectRatio(0.5 ,contentMode: .fit)
+                    .scaleEffect(width / 2450)
+                    .position(x: width, y: 30)
+            }
         }
+        .aspectRatio(1.0, contentMode: .fit)
+    }
+}
+
+//struct SettingsGear_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UnrotatedSettingsGear()
+//    }
+//}
+
+struct RotatedSettingsGear: View {
+    let angle: Angle
     
     var body: some View {
         GeometryReader { geometry in
-            
-        let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
-            let height = width
-            let center = CGPoint(
-                x: width / 2.0,
-                y: height / 2.0
-            )
-            let radius = min(width / 2.0, height / 2.0)
-            
-//            Circle()
-//                .trim(from: center, to: CGFloat())
+            UnrotatedSettingsGear()
+                .rotationEffect(angle, anchor: UnitPoint(x: 0.5, y: 0.5))
         }
     }
 }
 
 struct SettingsGear: View {
-    var body: some View {
-        GeometryReader { geometry in
-            
-            
+    var teeth: some View {
+        ForEach(0..<55) { index in
+            RotatedBadgeSymbol(
+                angle: .degrees(Double(index) / Double(54)) * 360.0
+            )
         }
+    }
+    var body: some View {
+        ZStack {
+            GeometryReader { geometry in
+                teeth
+            }
+        }
+        .aspectRatio(1.0, contentMode: .fit)
+        .scaleEffect(0.3)
     }
 }
 
-struct SettingsGear_Previews: PreviewProvider {
+struct MyPreviewProvider_Previews: PreviewProvider {
     static var previews: some View {
         SettingsGear()
+            .aspectRatio(1.0, contentMode: .fit)
     }
 }

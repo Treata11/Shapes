@@ -33,7 +33,7 @@ struct Triangle: InsettableShape {
 struct Triangle_Previews: PreviewProvider {
     static var previews: some View {
         Triangle()
-            .aspectRatio(1.0, contentMode: .fit)
+            .aspectRatio(1.5, contentMode: .fit)
             .foregroundColor(.accentColor)
     }
 }
