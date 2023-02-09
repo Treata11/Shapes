@@ -17,27 +17,28 @@ struct PentagonParameters {
     static let adjustment: CGFloat = 0.0
     
     static let segments = [
-        Segment(
+        Segment(    /// α
+            line: CGPoint(x: 1.9510565, y: 0.690983),
+            curve: CGPoint(x: 1.0, y: 1.0),
+            control: CGPoint(x: 1.0, y: 1.0)
+        ),
+        Segment(    /// β
             line: CGPoint(x: 1.0, y: 0.0),  // Middle & Top
             curve: CGPoint(x: 1.0, y: 1.0),
             control: CGPoint(x: 1.0, y: 1.0)
         ),
-        Segment(
-            line: CGPoint(x: 0.0491, y: 0.30902),
+        Segment(    /// γ
+            line: CGPoint(x: 0.0489435, y: 0.690983),
             curve: CGPoint(x: 1.0, y: 1.0),
             control: CGPoint(x: 1.0, y: 1.0)
         ),
-        Segment(line: CGPoint(x: 0.4122, y: 1.118),
-                curve: CGPoint(x: 1.0, y: 1.0),
-                control: CGPoint(x: 1.0, y: 1.0)
-        ),
-        Segment(
-            line: CGPoint(x: 1.5878, y: 1.118),
+        Segment(    /// δ
+            line: CGPoint(x: 0.41221475, y: 1.809017),
             curve: CGPoint(x: 1.0, y: 1.0),
             control: CGPoint(x: 1.0, y: 1.0)
         ),
-        Segment(
-            line: CGPoint(x: 1.9511, y: 0.30902),
+        Segment(    /// ε
+            line: CGPoint(x: 1.587785, y: 1.809017),
             curve: CGPoint(x: 1.0, y: 1.0),
             control: CGPoint(x: 1.0, y: 1.0)
         )
@@ -58,10 +59,11 @@ struct Pentagon: View {
 ///                path.move(to: PentagonParameters.segments.first!.line)
                 path.move(
                     to: CGPoint(
-                        x: width * 1.0,
-                        y: height * (0.0 + PentagonParameters.adjustment)
+                        x: width * 1.9510565,
+                        y: height * (0.690983)
                     )
                 )
+                
                 PentagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
@@ -81,11 +83,11 @@ struct Pentagon: View {
 //                    )
                 }
             }
-            .fill(.linearGradient(
-                Gradient(colors: [Self.gradientStart, Self.gradientEnd]),
-                startPoint: UnitPoint(x: 0.5, y: 0.0),
-                endPoint: UnitPoint(x: 0.5, y: 0.6)
-                ))
+//            .fill(.linearGradient(
+//                Gradient(colors: [Self.gradientStart, Self.gradientEnd]),
+//                startPoint: UnitPoint(x: 0.5, y: 0.0),
+//                endPoint: UnitPoint(x: 0.5, y: 0.6)
+//                ))
         }
         .aspectRatio(1, contentMode: .fit)
     }
