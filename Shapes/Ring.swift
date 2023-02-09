@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct Ring: Shape {
-    func path(in rect: CGRect) -> Path {
-        var p = Path()
-        
-        func trim(
-            from startFraction: CGFloat = 0,
-            to endFraction: CGFloat = 1
-        ) -> some Shape {
+struct Ring: View {
+    var body: some View {
+        GeometryReader { geometry in
+            
+            let width = geometry.size.width
+            
             Circle()
+                .inset(by: 20)
+                .strokeBorder(lineWidth: width / 13)
         }
-        return p
+        .aspectRatio(1.0, contentMode: .fit)
     }
 }
 
