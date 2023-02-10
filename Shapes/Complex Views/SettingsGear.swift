@@ -62,7 +62,7 @@ struct SettingsGear: View {
     }
 }
 
-struct Gear_Previews: PreviewProvider {
+struct SettingsGear_Previews: PreviewProvider {
     static var previews: some View {
         SettingsGear()
             .aspectRatio(1.0, contentMode: .fit)
