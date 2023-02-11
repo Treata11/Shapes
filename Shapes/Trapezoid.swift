@@ -29,7 +29,7 @@ struct Trapezoid: Shape {
 
 struct Trapezoid_Previews: PreviewProvider {
     static var previews: some View {
-        Trapezoid(insetAmount: 100)
+        Trapezoid(insetAmount: 250)
             .foregroundColor(.accentColor)
     }
 }

@@ -14,7 +14,7 @@ struct GearWithASingleTooth: View {
                 let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
 //                Ring()
 //                    .scaleEffect(0.77)
-                Triangle()
+                Trapezoid(insetAmount: 57)
                     .aspectRatio(0.33 ,contentMode: .fit)
                     .scaleEffect(width / 3000)
                     .position(x: width, y: 36.8)
