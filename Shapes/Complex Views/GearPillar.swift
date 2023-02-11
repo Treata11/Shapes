@@ -13,11 +13,13 @@ struct PillarParameters {
     /// make use of segments in creation of pillar
  
     static let downLeft = CGPoint(x: 65, y: 67)
-    static let midLeft = CGPoint(x: 65, y: 32)
+    static let upTheMiddleLeft = CGPoint(x: 65, y: 32)
     static let upLeft =  CGPoint(x: 52, y: 22)
-    static let upRight = CGPoint(x: 82, y: 22)
-    static let midRight = CGPoint(x: 69, y: 32)
+    static let upTheMiddleRight = CGPoint(x: 82, y: 22)
+    static let midURight = CGPoint(x: 69, y: 32)
     static let downRight = CGPoint(x: 69, y: 67)
+    static let downTheMiddleRight = CGPoint(x: 69, y: 67)
+    static let downTheMiddleLeft = CGPoint(x: 69, y: 67)
 }
 
 struct GearPillar: View {
