@@ -15,6 +15,9 @@ struct PillarParameters {
         let control: CGPoint
     }
     
+    // MARK: - ToDo
+    /// make use of segments in creation of pillar
+
     static let segments = [
         Segment(    /// α
             line: CGPoint(x: 65, y: 67),
@@ -61,11 +64,11 @@ struct GearPillar: View {
                     y: height * 30)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 60 * width, y: 13 * height),
+                    to: CGPoint(x: 55 * width, y: 13 * height),
                     control: CGPoint(x: 65 * width, y: 20 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: width * 74,
+                    x: width * 79,
                     y: height * 13)
                 )
                 path.addQuadCurve(
