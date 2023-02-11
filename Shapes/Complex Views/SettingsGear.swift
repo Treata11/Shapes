@@ -84,7 +84,7 @@ struct SettingsGears: View {
             Circle()
                 .scaleEffect(0.03)
                 .foregroundColor(.black)
-                .opacity(0.65)
+                .opacity(0.65)b
         }
     }
 }
