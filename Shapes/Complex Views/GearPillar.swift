@@ -39,19 +39,19 @@ struct GearPillar: View {
                 )
                 path.addLine(to: CGPoint(
                     x: width * 65,
-                    y: height * 38)
+                    y: height * 40)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 52 * width, y: 20 * height),
-                    control: CGPoint(x: 65 * width, y: 20 * height)
+                    to: CGPoint(x: 52 * width, y: 22 * height),
+                    control: CGPoint(x: 65 * width, y: 22 * height)
                 )
                 path.addLine(to: CGPoint(
                     x: width * 82,
-                    y: height * 20)
+                    y: height * 22)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 69 * width, y: 38 * height),
-                    control: CGPoint(x: 69 * width, y: 20 * height)
+                    to: CGPoint(x: 69 * width, y: 40 * height),
+                    control: CGPoint(x: 69 * width, y: 22 * height)
                 )
                 path.addLine(to: CGPoint(
                     x: width * 69,
@@ -93,7 +93,7 @@ struct WheelDrivePillars: View {
                 }
             }
             .aspectRatio(1, contentMode: .fit)
-            .rotationEffect(.degrees(-30))
+            .rotationEffect(.degrees(-34))
         }
     }
 }
