@@ -7,7 +7,7 @@
 
 import SwiftUI
     
-struct UnrotatedSettingsGear: View {
+struct GearWithASingleTooth: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -35,7 +35,7 @@ struct RotatedSettingsGear: View {
     
     var body: some View {
         GeometryReader { geometry in
-            UnrotatedSettingsGear()
+            GearWithASingleTooth()
                 .rotationEffect(angle, anchor: UnitPoint(x: 0.5, y: 0.5))
         }
     }
@@ -58,14 +58,55 @@ struct SettingsGear: View {
             }
         }
         .aspectRatio(1.0, contentMode: .fit)
-        .scaleEffect(0.3)
+//        .scaleEffect(0.3)
     }
 }
 
-struct SettingsGear_Previews: PreviewProvider {
+struct WheelDriveGear: View {
+    
+    struct WheelDriveParameters {
+        struct Segment {
+            let line: CGPoint
+            let curve: CGPoint
+            let control: CGPoint
+        }
+
+//        static var segments = [
+//            Segment(
+//                line: CGPoint(x: 0.5, y: 0.5),
+//                curve: ,
+//                control:
+//            ),
+//        ]
+    }
+    
+    var body: some View {
+        GeometryReader { geometry in
+            let width = CGPoint(
+                x: geometry.size.width / 2.0,
+                y: geometry.size.height / 2.0
+            )
+            let height = width
+            
+            SettingsGear()
+            
+        }
+        .aspectRatio(1.0, contentMode: .fit)
+    }
+}
+
+//struct SettingsGear_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingsGear()
+//            .aspectRatio(1.0, contentMode: .fit)
+//            .foregroundColor(.gray)
+//    }
+//}
+
+struct WheelDriveGear_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsGear()
-            .aspectRatio(1.0, contentMode: .fit)
+        WheelDriveGear()
             .foregroundColor(.gray)
+            .aspectRatio(contentMode: .fit)
     }
 }

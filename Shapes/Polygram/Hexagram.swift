@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreGraphics
 
-struct Hexagram: View {
+struct Hexagram: View, Animatable {
     var body: some View {
 
         let equilateralTriangle = EquilateralTriangle(rotationAngle: Angle(degrees: 0))

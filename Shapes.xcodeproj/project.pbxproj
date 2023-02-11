@@ -33,6 +33,7 @@
 		61DE5DC129941B9800CE1833 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DC029941B9800CE1833 /* Triangle.swift */; };
 		61DE5DC329942E1900CE1833 /* EquilateralTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DC229942E1900CE1833 /* EquilateralTriangle.swift */; };
 		61DFD72C29918FDB0030971F /* Octagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DFD72B29918FDB0030971F /* Octagon.swift */; };
+		61F81ED32997A4220048A903 /* GearPillar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F81ED22997A4220048A903 /* GearPillar.swift */; };
 		61F9F861299013E100179EE1 /* Blobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F860299013E100179EE1 /* Blobs.swift */; };
 		61FF285229903C3B000B291C /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285129903C3B000B291C /* UtilityExtensions.swift */; };
 		61FF285429903E21000B291C /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285329903E21000B291C /* Diamond.swift */; };
@@ -70,6 +71,7 @@
 		61DE5DC029941B9800CE1833 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		61DE5DC229942E1900CE1833 /* EquilateralTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquilateralTriangle.swift; sourceTree = "<group>"; };
 		61DFD72B29918FDB0030971F /* Octagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagon.swift; sourceTree = "<group>"; };
+		61F81ED22997A4220048A903 /* GearPillar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearPillar.swift; sourceTree = "<group>"; };
 		61F9F860299013E100179EE1 /* Blobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blobs.swift; sourceTree = "<group>"; };
 		61FF285129903C3B000B291C /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
 		61FF285329903E21000B291C /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		613E0DE1299532E9005F77F3 /* Complex Views */ = {
 			isa = PBXGroup;
 			children = (
+				61F81ED22997A4220048A903 /* GearPillar.swift */,
 				613E0DE229953310005F77F3 /* SettingsGear.swift */,
 				61AFFB5A2996CFAB002A5A28 /* Gear.swift */,
 			);
@@ -299,6 +302,7 @@
 				6119F6622993DAE000DAC60F /* Star.swift in Sources */,
 				61DE5DC129941B9800CE1833 /* Triangle.swift in Sources */,
 				61F9F861299013E100179EE1 /* Blobs.swift in Sources */,
+				61F81ED32997A4220048A903 /* GearPillar.swift in Sources */,
 				61FF285829904509000B291C /* Spade.swift in Sources */,
 				617017852991A3C200A1299E /* Hexagon.swift in Sources */,
 				613E0DE329953310005F77F3 /* SettingsGear.swift in Sources */,
