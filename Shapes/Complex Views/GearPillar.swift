@@ -13,10 +13,10 @@ struct PillarParameters {
     /// make use of segments in creation of pillar
  
     static let downLeft = CGPoint(x: 65, y: 67)
-    static let midLeft = CGPoint(x: 65, y: 33)
-    static let upLeft =  CGPoint(x: 52, y: 13)
-    static let upRight = CGPoint(x: 82, y: 13)
-    static let midRight = CGPoint(x: 69, y: 33)
+    static let midLeft = CGPoint(x: 65, y: 32)
+    static let upLeft =  CGPoint(x: 52, y: 22)
+    static let upRight = CGPoint(x: 82, y: 22)
+    static let midRight = CGPoint(x: 69, y: 32)
     static let downRight = CGPoint(x: 69, y: 67)
 }
 
@@ -39,19 +39,19 @@ struct GearPillar: View {
                 )
                 path.addLine(to: CGPoint(
                     x: width * 65,
-                    y: height * 40)
+                    y: height * 32)
                 )
                 path.addQuadCurve(
                     to: CGPoint(x: 52 * width, y: 22 * height),
-                    control: CGPoint(x: 65 * width, y: 22 * height)
+                    control: CGPoint(x: 65 * width, y: 24 * height)
                 )
                 path.addLine(to: CGPoint(
                     x: width * 82,
                     y: height * 22)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 69 * width, y: 40 * height),
-                    control: CGPoint(x: 69 * width, y: 22 * height)
+                    to: CGPoint(x: 69 * width, y: 32 * height),
+                    control: CGPoint(x: 69 * width, y: 24 * height)
                 )
                 path.addLine(to: CGPoint(
                     x: width * 69,

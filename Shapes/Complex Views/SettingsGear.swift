@@ -15,7 +15,7 @@ struct GearWithASingleTooth: View {
 //                Ring()
 //                    .scaleEffect(0.77)
                 Triangle()
-                    .aspectRatio(0.35 ,contentMode: .fit)
+                    .aspectRatio(0.33 ,contentMode: .fit)
                     .scaleEffect(width / 3000)
                     .position(x: width, y: 36.8)
             }
@@ -23,12 +23,6 @@ struct GearWithASingleTooth: View {
         .aspectRatio(1.0, contentMode: .fit)
     }
 }
-
-//struct SettingsGear_Previews: PreviewProvider {
-//    static var previews: some View {
-//        UnrotatedSettingsGear()
-//    }
-//}
 
 struct RotatedSettingsGear: View {
     let angle: Angle
@@ -79,12 +73,12 @@ struct SettingsGears: View {
         ZStack {
             WheelDriveGear()
             SettingsGear()
-                .scaleEffect(0.58)
+                .scaleEffect(0.6)
                 .opacity(0.7)
             Circle()
                 .scaleEffect(0.03)
                 .foregroundColor(.black)
-                .opacity(0.65)b
+                .opacity(0.65)
         }
     }
 }
