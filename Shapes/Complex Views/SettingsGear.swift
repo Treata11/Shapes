@@ -74,7 +74,7 @@ struct SettingsGears: View {
             WheelDriveGear()
             SettingsGear()
                 .scaleEffect(0.6)
-                .opacity(0.75)
+                .opacity(0.8)
             Circle()
                 .scaleEffect(0.03)
                 .foregroundColor(.black)

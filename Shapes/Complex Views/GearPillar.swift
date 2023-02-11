@@ -29,7 +29,8 @@ struct GearPillar: View {
                 
                 let width = ceil(min(geometry.size.width, geometry.size.height)) / 133
                 let height = width
-                let startPoint = CGPoint(x: 65, y: 67)
+                let startPoint = CGPoint(x: 65, y: 32)
+                let endPoint = CGPoint(x: 65, y: 32)
                 
                 path.move(to: CGPoint(
                     x: width * startPoint.x,
@@ -37,12 +38,12 @@ struct GearPillar: View {
                 )
                 path.addLine(to: CGPoint(
                     x:65 * width,
-                    y: 67 * height)
+                    y: 32 * height)
                 )
-                path.addLine(to: CGPoint(
-                    x: width * 65,
-                    y: height * 32)
-                )
+//                path.addLine(to: CGPoint(
+//                    x: width * 65,
+//                    y: height * 32)
+//                )
                 path.addQuadCurve(
                     to: CGPoint(x: 52 * width, y: 22 * height),
                     control: CGPoint(x: 65 * width, y: 24 * height)
@@ -57,16 +58,20 @@ struct GearPillar: View {
                 )
                 path.addLine(to: CGPoint(
                     x: width * 69,
-                    y: height * 67)
+                    y: height * 32)
                 )
-//                path.addLine(to: CGPoint(
-//                    x: width * 69,
-//                    y: height * 55)
-//                )
-//                path.addQuadCurve(
-//                    to: CGPoint(x: 71 * width, y: 70 * height),
-//                    control: CGPoint(x: 69 * width, y: 67 * height)
-//                )
+                path.addQuadCurve(
+                    to: CGPoint(x: 70 * width, y: 69 * height),
+                    control: CGPoint(x: 67 * width, y: 67 * height)
+                )
+                path.addLine(to: CGPoint(
+                    x: width * 64,
+                    y: height * 69)
+                )
+                path.addQuadCurve(
+                    to: CGPoint(x: 65 * width, y: 32 * height),
+                    control: CGPoint(x: 67 * width, y: 67 * height)
+                )
             }
         }
         .aspectRatio(contentMode: .fit)
@@ -104,6 +109,7 @@ struct WheelDrivePillars: View {
 //    static var previews: some View {
 //        GearPillar()
 //            .foregroundColor(.gray)
+//            .opacity(0.7)
 //    }
 //}
 
