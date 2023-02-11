@@ -84,7 +84,13 @@ struct SettingsGears: View {
         ZStack {
             WheelDriveGear()
             SettingsGear()
-                .scaleEffect(0.55)
+                .scaleEffect(0.58)
+                .opacity(0.7)
+                .rotationEffect(.degrees(4))
+            Circle()
+                .scaleEffect(0.03)
+                .foregroundColor(.black)
+                .opacity(0.65)
 
         }
     }
