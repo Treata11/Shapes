@@ -9,37 +9,15 @@ import SwiftUI
 
 struct PillarParameters {
     
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
     // MARK: - ToDo
     /// make use of segments in creation of pillar
-
-    static let segments = [
-        Segment(    /// α
-            line: CGPoint(x: 65, y: 67),
-            curve: CGPoint(x: 1.0, y: 1.0),
-            control: CGPoint(x: 1.0, y: 1.0)
-            ),
-        Segment(    /// β
-            line: CGPoint(x: 65, y: 20),
-            curve: CGPoint(x: 1.0, y: 1.0),
-            control: CGPoint(x: 1.0, y: 1.0)
-            ),
-        Segment(    /// γ
-            line: CGPoint(x: 69, y: 20),
-            curve: CGPoint(x: 1.0, y: 1.0),
-            control: CGPoint(x: 1.0, y: 1.0)
-            ),
-        Segment(    /// δ
-            line: CGPoint(x: 69, y: 67),
-            curve: CGPoint(x: 1.0, y: 1.0),
-            control: CGPoint(x: 1.0, y: 1.0)
-            )
-    ]
+ 
+    static let downLeft = CGPoint(x: 65, y: 67)
+    static let midLeft = CGPoint(x: 65, y: 33)
+    static let upLeft =  CGPoint(x: 52, y: 13)
+    static let upRight = CGPoint(x: 82, y: 13)
+    static let midRight = CGPoint(x: 69, y: 33)
+    static let downRight = CGPoint(x: 69, y: 67)
 }
 
 struct GearPillar: View {
@@ -61,18 +39,18 @@ struct GearPillar: View {
                 )
                 path.addLine(to: CGPoint(
                     x: width * 65,
-                    y: height * 30)
+                    y: height * 38)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 55 * width, y: 13 * height),
+                    to: CGPoint(x: 52 * width, y: 20 * height),
                     control: CGPoint(x: 65 * width, y: 20 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: width * 79,
-                    y: height * 13)
+                    x: width * 82,
+                    y: height * 20)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 69 * width, y: 30 * height),
+                    to: CGPoint(x: 69 * width, y: 38 * height),
                     control: CGPoint(x: 69 * width, y: 20 * height)
                 )
                 path.addLine(to: CGPoint(

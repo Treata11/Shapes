@@ -65,13 +65,8 @@ struct SettingsGear: View {
 struct WheelDriveGear: View {
     var body: some View {
         GeometryReader { geometry in
-            let width = CGPoint(
-                x: geometry.size.width / 2.0,
-                y: geometry.size.height / 2.0
-            )
             ZStack {
                 WheelDrivePillars()
-                    .scaleEffect(0.9)
                 SettingsGear()
             }
         }
