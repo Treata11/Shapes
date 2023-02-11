@@ -37,7 +37,7 @@ struct RotatedSettingsGear: View {
 
 struct SettingsGear: View {
     var teeth: some View {
-        ForEach(0..<55) { index in
+        ForEach(0..<54) { index in
             RotatedSettingsGear(
                 angle: .degrees(Double(index) / Double(54)) * 360.0
             )
@@ -74,7 +74,7 @@ struct SettingsGears: View {
             WheelDriveGear()
             SettingsGear()
                 .scaleEffect(0.6)
-                .opacity(0.7)
+                .opacity(0.75)
             Circle()
                 .scaleEffect(0.03)
                 .foregroundColor(.black)

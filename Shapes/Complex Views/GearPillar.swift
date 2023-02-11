@@ -86,7 +86,7 @@ struct WheelDrivePillars: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-                ForEach(0..<4) { index in
+                ForEach(0..<3) { index in
                     RotatedGearPillars(
                         angle: .degrees(Double(index) / Double(3)) * 360.0
                     )
