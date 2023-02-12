@@ -10,28 +10,26 @@ import SwiftUI
 struct LoadingView: View {
     
     @State private var rotaionAngle: Angle = .degrees(0)
-    @State private var linearRotationAngle: Angle = .degrees(0)
+    @State private var linearRotationAngle: Angle = .degrees(360)
     
     var body: some View {
-        ZStack {
-            GeometryReader { geometry in
+        GeometryReader { geometry in
+            ZStack {
                 WheelDriveGear(rotationAngle: rotaionAngle)
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                    .position(CGPoint(x: geometry.size.width / 2.0, y: geometry.size.height / 2.0))
                     .onAppear {
                         withAnimation(.easeInOut(duration: 12).repeatForever(autoreverses: false)) {
                             rotaionAngle += .degrees(360)
+                        }
                     }
-                }
                 SettingsGears(rotationAngle: rotaionAngle)
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                    .position(CGPoint(x: geometry.size.width / 2.0, y: geometry.size.height / 2.0))
                     .onAppear {
                         withAnimation(.linear(duration: 6).repeatForever(autoreverses: false)) {
                             linearRotationAngle -= .degrees(1)
+                        }
                     }
-                }
             }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .position(CGPoint(x: geometry.size.width / 2.0, y: geometry.size.height / 2.0))
         }
         .aspectRatio(1.0, contentMode: .fit)
     }
