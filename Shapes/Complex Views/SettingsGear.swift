@@ -89,18 +89,18 @@ struct SettingsGears: View {
     }
 }
 
-struct SettingsGear_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsGears(rotationAngle: .A360)
-            .aspectRatio(1.0, contentMode: .fit)
-            .foregroundColor(.gray)
-    }
-}
-
-//struct WheelDriveGear_Previews: PreviewProvider {
+//struct SettingsGear_Previews: PreviewProvider {
 //    static var previews: some View {
-//        WheelDriveGear()
+//        SettingsGears(rotationAngle: .A360)
+//            .aspectRatio(1.0, contentMode: .fit)
 //            .foregroundColor(.gray)
-//            .aspectRatio(contentMode: .fit)
 //    }
 //}
+
+struct WheelDriveGear_Previews: PreviewProvider {
+    static var previews: some View {
+        WheelDriveGear(rotationAngle: .degrees(0))
+            .foregroundColor(.gray)
+            .aspectRatio(contentMode: .fit)
+    }
+}
