@@ -72,6 +72,8 @@ struct WheelDriveGear: View {
 }
 
 struct SettingsGears: View {
+    var rotationAngle: Angle
+    
     var body: some View {
         ZStack {
             SettingsGear()
@@ -87,7 +89,7 @@ struct SettingsGears: View {
 
 struct SettingsGear_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsGears()
+        SettingsGears(rotationAngle: .A360)
             .aspectRatio(1.0, contentMode: .fit)
             .foregroundColor(.gray)
     }
