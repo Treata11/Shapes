@@ -22,10 +22,11 @@ struct LoadingView: View {
                         }
                     }
                 
-                SettingsGears(rotationAngle: rotaionAngle)
+                SettingsGears(rotationAngle: linearRotationAngle)
+                    .rotationEffect(linearRotationAngle)
                     .onAppear {
-                        withAnimation(.linear(duration: 6).repeatForever(autoreverses: false)) {
-                            linearRotationAngle += .degrees(1)
+                        withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
+                            linearRotationAngle -= .degrees(360)
                         }
                     }
             }

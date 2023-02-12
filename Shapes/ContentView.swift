@@ -30,6 +30,7 @@ struct ContentView: View {
                     .position(x: 300, y: 250)
                 Hexagram()
                     .frame(width: dedicatedWidth, height: dedicatedHeight)
+                LoadingView()
             }
         }
         .aspectRatio(contentMode: .fit)
