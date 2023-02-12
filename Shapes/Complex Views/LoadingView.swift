@@ -19,18 +19,9 @@ struct LoadingView: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .position(CGPoint(x: geometry.size.width / 2.0, y: geometry.size.height / 2.0))
                     .onAppear {
-                        withAnimation(.easeInOut(duration: 10).repeatForever(autoreverses: false)) {
+                        withAnimation(.easeInOut(duration: 12).repeatForever(autoreverses: false)) {
                             rotaionAngle += .degrees(360)
                     }
-//                    Label {
-//                        Text("")
-//                            .font(.body)
-//                            .foregroundColor(.primary)
-//                    } icon: {
-//                        WheelDriveGear()
-//                            .rotationEffect(.degrees())
-//                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
-//                    }
                 }
             }
         }
@@ -45,9 +36,3 @@ struct LoadingView_Previews: PreviewProvider {
             .rotationEffect(.A180)
     }
 }
-
-
-
-
-
-//                    .rotationEffect(.degrees(360), anchor: UnitPoint(x: 0.5, y: 0.5))
