@@ -57,6 +57,8 @@ struct SettingsGear: View {
 }
 
 struct WheelDriveGear: View {
+    var rotationAngle: Angle
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -64,6 +66,7 @@ struct WheelDriveGear: View {
                 SettingsGear()
             }
         }
+        .rotationEffect(rotationAngle)
         .aspectRatio(1.0, contentMode: .fit)
     }
 }
@@ -71,7 +74,6 @@ struct WheelDriveGear: View {
 struct SettingsGears: View {
     var body: some View {
         ZStack {
-            WheelDriveGear()
             SettingsGear()
                 .scaleEffect(0.6)
                 .opacity(0.8)
