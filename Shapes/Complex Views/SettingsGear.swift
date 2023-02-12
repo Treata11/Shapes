@@ -84,6 +84,8 @@ struct SettingsGears: View {
                 .foregroundColor(.black)
                 .opacity(0.65)
         }
+        .rotationEffect(rotationAngle)
+        .aspectRatio(1.0, contentMode: .fit)
     }
 }
 
