@@ -80,7 +80,7 @@ struct MainDials: View {
                 angle: .degrees(Double(index) / Double(36)) * 360.0
             )
         }
-
+    }
     var body: some View {
         ZStack {
             GeometryReader { geometry in
