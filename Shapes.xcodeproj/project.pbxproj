@@ -105,6 +105,25 @@
 			path = Symbols;
 			sourceTree = "<group>";
 		};
+		611E3499299A5B2D005994E6 /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				61A35DC6299A1B6800AEDEEB /* Dials.swift */,
+				611E3497299A55E1005994E6 /* CompassNeedle.swift */,
+			);
+			path = Safari;
+			sourceTree = "<group>";
+		};
+		611E349A299A5B4A005994E6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				61F81ED22997A4220048A903 /* GearPillar.swift */,
+				613E0DE229953310005F77F3 /* SettingsGear.swift */,
+				61189B6E29981E8100623605 /* LoadingView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		612C094A2991046D00247E0F /* Polygon */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +145,9 @@
 		613E0DE1299532E9005F77F3 /* Complex Views */ = {
 			isa = PBXGroup;
 			children = (
-				61F81ED22997A4220048A903 /* GearPillar.swift */,
-				613E0DE229953310005F77F3 /* SettingsGear.swift */,
-				61189B6E29981E8100623605 /* LoadingView.swift */,
+				611E349A299A5B4A005994E6 /* Settings */,
+				611E3499299A5B2D005994E6 /* Safari */,
 				61AFFB5A2996CFAB002A5A28 /* Gear.swift */,
-				61A35DC6299A1B6800AEDEEB /* Dials.swift */,
-				611E3497299A55E1005994E6 /* CompassNeedle.swift */,
 			);
 			path = "Complex Views";
 			sourceTree = "<group>";
