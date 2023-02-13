@@ -120,7 +120,6 @@ struct RotatedSingleMainDial: View {
     
     var body: some View {
         SingleMainDial()
-//            .padding(-60)
             .rotationEffect(angle, anchor: .center)
     
     }
@@ -191,5 +190,6 @@ struct Dials: View {
 struct Dials_Previews: PreviewProvider {
     static var previews: some View {
         Dials()
+            .foregroundColor(.white)
     }
 }
