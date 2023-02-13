@@ -178,12 +178,14 @@ struct Dials: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
+                Circle()
+                    .foregroundColor(.accentColor)
                 MainDials()
                 SubDials()
                     .rotationEffect(.degrees(5))
             }
         }
-        .aspectRatio(contentMode: .fit)
+        .scaledToFit()
     }
 }
 
