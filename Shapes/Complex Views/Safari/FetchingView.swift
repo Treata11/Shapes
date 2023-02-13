@@ -31,6 +31,7 @@ struct FetchingView: View {
                     }
                 }
         }
+        .padding()
     }
 }
 

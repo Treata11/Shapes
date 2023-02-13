@@ -17,19 +17,19 @@ struct ContentView: View {
                 let dedicatedWidth = geometry.size.width / 5.0
                 let dedicatedHeight = geometry.size.height / 5.0
                 
-                Trapezoid(insetAmount: insetAmount)
-                    .frame(width: dedicatedWidth, height: dedicatedHeight)
-                    .position(x: 100, y: 100)
-                    .onTapGesture {
-                        withAnimation {
-                            insetAmount = Double.random(in: 20...90)
-                        }
-                    }
-                Pentagram()
-                    .frame(width: dedicatedWidth, height: dedicatedHeight)
-                    .position(x: 300, y: 250)
-                Hexagram()
-                    .frame(width: dedicatedWidth, height: dedicatedHeight)
+//                Trapezoid(insetAmount: insetAmount)
+//                    .frame(width: dedicatedWidth, height: dedicatedHeight)
+//                    .position(x: 100, y: 100)
+//                    .onTapGesture {
+//                        withAnimation {
+//                            insetAmount = Double.random(in: 20...90)
+//                        }
+//                    }
+//                Pentagram()
+//                    .frame(width: dedicatedWidth, height: dedicatedHeight)
+//                    .position(x: 300, y: 250)
+//                Hexagram()
+//                    .frame(width: dedicatedWidth, height: dedicatedHeight)
                 LoadingView()
             }
         }
