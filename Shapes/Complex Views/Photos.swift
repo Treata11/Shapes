@@ -59,21 +59,6 @@ struct VividCapsule: View {
     }
 }
 
-
-//struct VerticalCapsule: View {
-//    let rotationAngle: Angle
-//    let anchorPoint: UnitPoint
-//
-//    var body: some View {
-//        GeometryReader { geo in
-//            Capsule(style: .continuous)
-//        }
-//        .rotationEffect(rotationAngle, anchor: anchorPoint)
-//        .aspectRatio(0.65823, contentMode: .fit)
-//        .opacity(0.7)
-//    }
-//}
-
 struct Photos_Previews: PreviewProvider {
     static var previews: some View {
         Photos()
