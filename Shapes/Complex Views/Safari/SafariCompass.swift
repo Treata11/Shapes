@@ -12,6 +12,7 @@ struct SafariCompass: View {
         ZStack {
             Dials()
             CompassNeedle()
+                .rotationEffect(.degrees(50))
         }
     }
 }

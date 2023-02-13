@@ -15,23 +15,23 @@ struct MainDialParameters {
     }
     
     static let segments  = [
-        Segment(
-            line: CGPoint(x: 84, y: 5),
+        Segment(    /// α
+            line: CGPoint(x: 84.4, y: 5),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 86, y: 5),
+            line: CGPoint(x: 85.6, y: 5),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 86, y: 21),
+            line: CGPoint(x: 85.6, y: 21),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 84, y: 21),
+            line: CGPoint(x: 84.4, y: 21),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
@@ -46,23 +46,23 @@ struct SubDialParameters {
     }
     
     static let segments  = [
-        Segment(
-            line: CGPoint(x: 84, y: 5),
+        Segment(    /// α
+            line: CGPoint(x: 84.4, y: 5),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 86, y: 5),
+            line: CGPoint(x: 85.6, y: 5),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 86, y: 14),
+            line: CGPoint(x: 85.6, y: 14),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 84, y: 14),
+            line: CGPoint(x: 84.4, y: 14),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
@@ -75,10 +75,13 @@ struct SingleMainDial: View {
 
             let width = ceil(min(geometry.size.width, geometry.size.height)) / 170
             let height = width
-            let startPoint = CGPoint(x: 84, y: 5)
+            let α = CGPoint(
+                x: MainDialParameters.segments.first!.line.x,
+                y: MainDialParameters.segments.first!.line.y
+            )
             
             Path { path in
-                path.move(to: CGPoint(x: startPoint.x * width, y: startPoint.y * height))
+                path.move(to: CGPoint(x: α.x * width, y: α.y * height))
                 
                 MainDialParameters.segments.forEach { segment in
                     path.addLine(to: CGPoint(
@@ -98,10 +101,13 @@ struct SingleSubDial: View {
 
             let width = ceil(min(geometry.size.width, geometry.size.height)) / 170
             let height = width
-            let startPoint = CGPoint(x: 84, y: 14)
+            let α = CGPoint(
+                x: SubDialParameters.segments.first!.line.x,
+                y: SubDialParameters.segments.first!.line.y
+            )
             
             Path { path in
-                path.move(to: CGPoint(x: startPoint.x * width, y: startPoint.y * height))
+                path.move(to: CGPoint(x: α.x * width, y: α.y * height))
                 
                 SubDialParameters.segments.forEach { segment in
                     path.addLine(to: CGPoint(
@@ -184,6 +190,7 @@ struct Dials: View {
                 SubDials()
                     .rotationEffect(.degrees(5))
             }
+            .foregroundColor(.white)
         }
         .scaledToFit()
     }
@@ -192,6 +199,5 @@ struct Dials: View {
 struct Dials_Previews: PreviewProvider {
     static var previews: some View {
         Dials()
-            .foregroundColor(.white)
     }
 }
