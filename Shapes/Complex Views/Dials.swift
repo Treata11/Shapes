@@ -47,29 +47,29 @@ struct SubDialParameters {
     
     static let segments  = [
         Segment(
-            line: CGPoint(x: 84, y: 12),
+            line: CGPoint(x: 84, y: 5),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 86, y: 12),
+            line: CGPoint(x: 86, y: 5),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 86, y: 21),
+            line: CGPoint(x: 86, y: 14),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
         Segment(
-            line: CGPoint(x: 84, y: 21),
+            line: CGPoint(x: 84, y: 14),
             curve: CGPoint(x: 0, y: 0),
             control: CGPoint(x: 0, y: 0)
         ),
     ]
 }
 
-struct SingleDial: View {
+struct SingleMainDial: View {
     var body: some View {
         GeometryReader { geometry in
 
@@ -98,7 +98,7 @@ struct SingleSubDial: View {
 
             let width = ceil(min(geometry.size.width, geometry.size.height)) / 170
             let height = width
-            let startPoint = CGPoint(x: 84, y: 12)
+            let startPoint = CGPoint(x: 84, y: 14)
             
             Path { path in
                 path.move(to: CGPoint(x: startPoint.x * width, y: startPoint.y * height))
@@ -115,11 +115,11 @@ struct SingleSubDial: View {
     }
 }
 
-struct RotatedSingleDial: View {
+struct RotatedSingleMainDial: View {
     let angle: Angle
     
     var body: some View {
-        SingleDial()
+        SingleMainDial()
 //            .padding(-60)
             .rotationEffect(angle, anchor: .center)
     
@@ -130,7 +130,7 @@ struct RotatedSingleSubDial: View {
     let angle: Angle
     
     var body: some View {
-        SingleDial()
+        SingleSubDial()
             .rotationEffect(angle, anchor: .center)
     
     }
@@ -140,7 +140,7 @@ struct MainDials: View {
     
     var RotatedMainDials: some View {
         ForEach(0..<36) { index in
-            RotatedSingleDial(
+            RotatedSingleMainDial(
                 angle: .degrees(Double(index) / Double(36)) * 360.0
             )
         }
@@ -157,9 +157,9 @@ struct MainDials: View {
 
 struct SubDials: View {
     
-    var RotatedMainDials: some View {
+    var RotatedSubDials: some View {
         ForEach(0..<36) { index in
-            RotatedSingleDial(
+            RotatedSingleSubDial(
                 angle: .degrees(Double(index) / Double(36)) * 360.0
             )
         }
@@ -167,16 +167,29 @@ struct SubDials: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-                RotatedMainDials
+                RotatedSubDials
             }
         }
-        .rotationEffect(.degrees(10))
         .scaledToFit()
+    }
+}
+
+struct Dials: View {
+    
+    var body: some View {
+        ZStack {
+            GeometryReader { geometry in
+                MainDials()
+                SubDials()
+                    .rotationEffect(.degrees(5))
+            }
+        }
+        .aspectRatio(contentMode: .fit)
     }
 }
 
 struct Dials_Previews: PreviewProvider {
     static var previews: some View {
-        MainDials()
+        Dials()
     }
 }
