@@ -11,6 +11,7 @@
 		611594C629953E8E00E9E557 /* Infinity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611594C529953E8E00E9E557 /* Infinity.swift */; };
 		61189B6F29981E8100623605 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61189B6E29981E8100623605 /* LoadingView.swift */; };
 		6119F6622993DAE000DAC60F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119F6612993DAE000DAC60F /* Star.swift */; };
+		611E3498299A55E1005994E6 /* CompassNeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E3497299A55E1005994E6 /* CompassNeedle.swift */; };
 		6128A6E92995008B003ED4FD /* Decagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6E82995008B003ED4FD /* Decagram.swift */; };
 		6128A6EB2995021F003ED4FD /* Dodecagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6EA2995021F003ED4FD /* Dodecagram.swift */; };
 		612C09492990F66700247E0F /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C09482990F66700247E0F /* Pentagon.swift */; };
@@ -49,6 +50,7 @@
 		611594C529953E8E00E9E557 /* Infinity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity.swift; sourceTree = "<group>"; };
 		61189B6E29981E8100623605 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		6119F6612993DAE000DAC60F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		611E3497299A55E1005994E6 /* CompassNeedle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassNeedle.swift; sourceTree = "<group>"; };
 		6128A6E82995008B003ED4FD /* Decagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decagram.swift; sourceTree = "<group>"; };
 		6128A6EA2995021F003ED4FD /* Dodecagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dodecagram.swift; sourceTree = "<group>"; };
 		612C09482990F66700247E0F /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				61189B6E29981E8100623605 /* LoadingView.swift */,
 				61AFFB5A2996CFAB002A5A28 /* Gear.swift */,
 				61A35DC6299A1B6800AEDEEB /* Dials.swift */,
+				611E3497299A55E1005994E6 /* CompassNeedle.swift */,
 			);
 			path = "Complex Views";
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				6119F6622993DAE000DAC60F /* Star.swift in Sources */,
 				61DE5DC129941B9800CE1833 /* Triangle.swift in Sources */,
 				61F9F861299013E100179EE1 /* Blobs.swift in Sources */,
+				611E3498299A55E1005994E6 /* CompassNeedle.swift in Sources */,
 				61F81ED32997A4220048A903 /* GearPillar.swift in Sources */,
 				61FF285829904509000B291C /* Spade.swift in Sources */,
 				617017852991A3C200A1299E /* Hexagon.swift in Sources */,
