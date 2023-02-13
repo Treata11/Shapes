@@ -20,6 +20,7 @@
 		617017852991A3C200A1299E /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617017842991A3C200A1299E /* Hexagon.swift */; };
 		6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A14229943C3900AC9AA2 /* Schwastika.swift */; };
 		6191A1452994431100AC9AA2 /* Octagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A1442994431100AC9AA2 /* Octagram.swift */; };
+		61A35DC7299A1B6800AEDEEB /* Dials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35DC6299A1B6800AEDEEB /* Dials.swift */; };
 		61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */; };
 		61ACD1E22986C83C00F9FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */; };
 		61ACD1E62986C83C00F9FFB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E52986C83C00F9FFB9 /* Preview Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		617017842991A3C200A1299E /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		6191A14229943C3900AC9AA2 /* Schwastika.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schwastika.swift; sourceTree = "<group>"; };
 		6191A1442994431100AC9AA2 /* Octagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagram.swift; sourceTree = "<group>"; };
+		61A35DC6299A1B6800AEDEEB /* Dials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dials.swift; sourceTree = "<group>"; };
 		61ACD1DA2986C83B00F9FFB9 /* Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesApp.swift; sourceTree = "<group>"; };
 		61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				613E0DE229953310005F77F3 /* SettingsGear.swift */,
 				61189B6E29981E8100623605 /* LoadingView.swift */,
 				61AFFB5A2996CFAB002A5A28 /* Gear.swift */,
+				61A35DC6299A1B6800AEDEEB /* Dials.swift */,
 			);
 			path = "Complex Views";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A35DC7299A1B6800AEDEEB /* Dials.swift in Sources */,
 				61FF285429903E21000B291C /* Diamond.swift in Sources */,
 				61B0165B29915E5800CB820E /* Badge.swift in Sources */,
 				61DE5DBF2994123B00CE1833 /* Hexagram.swift in Sources */,
