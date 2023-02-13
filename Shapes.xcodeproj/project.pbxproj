@@ -13,6 +13,7 @@
 		6119F6622993DAE000DAC60F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119F6612993DAE000DAC60F /* Star.swift */; };
 		611E3498299A55E1005994E6 /* CompassNeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E3497299A55E1005994E6 /* CompassNeedle.swift */; };
 		611E349C299A5BBB005994E6 /* SafariCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E349B299A5BBB005994E6 /* SafariCompass.swift */; };
+		611E349E299A5FEA005994E6 /* FetchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E349D299A5FEA005994E6 /* FetchingView.swift */; };
 		6128A6E92995008B003ED4FD /* Decagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6E82995008B003ED4FD /* Decagram.swift */; };
 		6128A6EB2995021F003ED4FD /* Dodecagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6EA2995021F003ED4FD /* Dodecagram.swift */; };
 		612C09492990F66700247E0F /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C09482990F66700247E0F /* Pentagon.swift */; };
@@ -53,6 +54,7 @@
 		6119F6612993DAE000DAC60F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		611E3497299A55E1005994E6 /* CompassNeedle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassNeedle.swift; sourceTree = "<group>"; };
 		611E349B299A5BBB005994E6 /* SafariCompass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariCompass.swift; sourceTree = "<group>"; };
+		611E349D299A5FEA005994E6 /* FetchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingView.swift; sourceTree = "<group>"; };
 		6128A6E82995008B003ED4FD /* Decagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decagram.swift; sourceTree = "<group>"; };
 		6128A6EA2995021F003ED4FD /* Dodecagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dodecagram.swift; sourceTree = "<group>"; };
 		612C09482990F66700247E0F /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				61A35DC6299A1B6800AEDEEB /* Dials.swift */,
 				611E3497299A55E1005994E6 /* CompassNeedle.swift */,
 				611E349B299A5BBB005994E6 /* SafariCompass.swift */,
+				611E349D299A5FEA005994E6 /* FetchingView.swift */,
 			);
 			path = Safari;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */,
 				61189B6F29981E8100623605 /* LoadingView.swift in Sources */,
 				61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */,
+				611E349E299A5FEA005994E6 /* FetchingView.swift in Sources */,
 				61DFD72C29918FDB0030971F /* Octagon.swift in Sources */,
 				6191A1452994431100AC9AA2 /* Octagram.swift in Sources */,
 				61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */,
