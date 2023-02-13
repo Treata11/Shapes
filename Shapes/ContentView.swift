@@ -31,6 +31,7 @@ struct ContentView: View {
 //                Hexagram()
 //                    .frame(width: dedicatedWidth, height: dedicatedHeight)
                 LoadingView()
+                    .foregroundColor(.gray)
             }
         }
         .aspectRatio(contentMode: .fit)
@@ -40,6 +41,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .foregroundColor(.accentColor)
     }
 }

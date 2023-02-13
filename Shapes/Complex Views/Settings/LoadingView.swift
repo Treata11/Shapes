@@ -31,6 +31,7 @@ struct LoadingView: View {
                     }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
+            .padding()
             .position(CGPoint(x: geometry.size.width / 2.0, y: geometry.size.height / 2.0))
         }
         .aspectRatio(1.0, contentMode: .fit)
