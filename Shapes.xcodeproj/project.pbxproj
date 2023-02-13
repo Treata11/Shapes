@@ -23,6 +23,7 @@
 		617017852991A3C200A1299E /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617017842991A3C200A1299E /* Hexagon.swift */; };
 		6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A14229943C3900AC9AA2 /* Schwastika.swift */; };
 		6191A1452994431100AC9AA2 /* Octagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A1442994431100AC9AA2 /* Octagram.swift */; };
+		6199D506299A8DEA003F5C74 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199D505299A8DEA003F5C74 /* Photos.swift */; };
 		61A35DC7299A1B6800AEDEEB /* Dials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35DC6299A1B6800AEDEEB /* Dials.swift */; };
 		61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */; };
 		61ACD1E22986C83C00F9FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		617017842991A3C200A1299E /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		6191A14229943C3900AC9AA2 /* Schwastika.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schwastika.swift; sourceTree = "<group>"; };
 		6191A1442994431100AC9AA2 /* Octagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagram.swift; sourceTree = "<group>"; };
+		6199D505299A8DEA003F5C74 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		61A35DC6299A1B6800AEDEEB /* Dials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dials.swift; sourceTree = "<group>"; };
 		61ACD1DA2986C83B00F9FFB9 /* Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesApp.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				611E349A299A5B4A005994E6 /* Settings */,
 				611E3499299A5B2D005994E6 /* Safari */,
 				61AFFB5A2996CFAB002A5A28 /* Gear.swift */,
+				6199D505299A8DEA003F5C74 /* Photos.swift */,
 			);
 			path = "Complex Views";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */,
 				61189B6F29981E8100623605 /* LoadingView.swift in Sources */,
 				61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */,
+				6199D506299A8DEA003F5C74 /* Photos.swift in Sources */,
 				611E349E299A5FEA005994E6 /* FetchingView.swift in Sources */,
 				61DFD72C29918FDB0030971F /* Octagon.swift in Sources */,
 				6191A1452994431100AC9AA2 /* Octagram.swift in Sources */,
