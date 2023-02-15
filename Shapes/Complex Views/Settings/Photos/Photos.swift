@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct Photos: View {
-    let orange = Color(red: 240 / 255, green: 175 / 255, blue: 80 / 255)
-    let gelb = Color(red: 245 / 255, green: 230 / 255, blue: 83 / 255)
-    let lichtgrün = Color(red: 195 / 255, green: 215 / 255, blue: 105 / 255)
-    let dunkelgrün = Color(red: 130 / 255, green: 190 / 255, blue: 150 / 255)
-    let blau = Color(red: 115 / 255, green: 170 / 255, blue: 220 / 255)
-    let violett = Color(red: 160 / 255, green: 140 / 255, blue: 190 / 255)
-    let dunkelrosa = Color(red: 200 / 255, green: 135 / 255, blue: 170 / 255)
-    let rot = Color(red: 225 / 255, green: 120 / 255, blue: 105 / 255)
+    let orange = Color(red: 255 / 255, green: 170 / 255, blue: 65 / 255)
+    let gelb = Color(red: 245 / 255, green: 235 / 255, blue: 80 / 255)
+    let lichtgrün = Color(red: 180 / 255, green: 255 / 255, blue: 110 / 255)
+    let dunkelgrün = Color(red: 120 / 255, green: 185 / 255, blue: 175 / 255)
+    let blau = Color(red: 110 / 255, green: 160 / 255, blue: 255 / 255)
+    let violett = Color(red: 185 / 255, green: 95 / 255, blue: 255 / 255)
+    let dunkelrosa = Color(red: 215 / 255, green: 110 / 255, blue: 165 / 255)
+    let rot = Color(red: 255 / 255, green: 120 / 255, blue: 105 / 255)
     
     var RotatedVividCapsule: some View {
         EmptyView()
