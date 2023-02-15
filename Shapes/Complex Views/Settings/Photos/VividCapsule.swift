@@ -21,6 +21,12 @@ struct CapsuleParameters {
 }
 
 struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persian
+    // MARK: ToDo
+    // Use rainbowColor for ForEaching through
+    // indecies in Photos.swift to make the
+    // code much cleaner and easier to read.
+    static var rainbowColor = Color(red: 240 / 255, green: 175 / 255, blue: 80 / 255)
+    
     var body: some View {
         GeometryReader { geometry in
 
@@ -55,6 +61,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
                     clockwise: false
                 )
             }
+//            .fill(Self.rainbowColor)
         }
         .opacity(0.666)
     }
@@ -63,5 +70,6 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
 struct VividCapsule_Previews: PreviewProvider {
     static var previews: some View {
         NegarinCapsule()
+            .foregroundColor(NegarinCapsule.rainbowColor)
     }
 }
