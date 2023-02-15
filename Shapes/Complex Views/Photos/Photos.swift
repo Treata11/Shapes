@@ -20,6 +20,7 @@ struct Photos: View {
     ]
     
 //    var RotatedVividCapsule: some View {
+    
 //        ForEach(0..<8) { index in
 //            RotatedCapsule(
 //                rotationAngle: .degrees(Double(index) / Double(8)) * 360.0
