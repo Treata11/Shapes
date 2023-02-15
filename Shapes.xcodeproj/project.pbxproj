@@ -127,7 +127,6 @@
 		611E349A299A5B4A005994E6 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				61830002299ADA9C00BCDD8C /* Photos */,
 				61F81ED22997A4220048A903 /* GearPillar.swift */,
 				613E0DE229953310005F77F3 /* SettingsGear.swift */,
 				61189B6E29981E8100623605 /* LoadingView.swift */,
@@ -156,6 +155,7 @@
 		613E0DE1299532E9005F77F3 /* Complex Views */ = {
 			isa = PBXGroup;
 			children = (
+				61830002299ADA9C00BCDD8C /* Photos */,
 				611E349A299A5B4A005994E6 /* Settings */,
 				611E3499299A5B2D005994E6 /* Safari */,
 				61AFFB5A2996CFAB002A5A28 /* Gear.swift */,

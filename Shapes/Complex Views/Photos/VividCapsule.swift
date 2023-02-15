@@ -8,12 +8,6 @@
 import SwiftUI
 
 struct CapsuleParameters {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
     static let α = CGPoint(x: 109, y: 26)
     static let β = CGPoint(x: 109, y: 52)
     static let γ = CGPoint(x: 57, y: 52)
@@ -21,11 +15,13 @@ struct CapsuleParameters {
 }
 
 struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persian
-    // MARK: ToDo
+   
+    // MARK: - ToDo
     // Use rainbowColor for ForEaching through
     // indecies in Photos.swift to make the
     // code much cleaner and easier to read.
-    static var rainbowColor = Color(red: 240 / 255, green: 175 / 255, blue: 80 / 255)
+///    static var rainbowColor = Color(red: 240 / 255, green: 175 / 255, blue: 80 / 255)
+    // MARK: -
     
     var body: some View {
         GeometryReader { geometry in
@@ -70,6 +66,5 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
 struct VividCapsule_Previews: PreviewProvider {
     static var previews: some View {
         NegarinCapsule()
-            .foregroundColor(NegarinCapsule.rainbowColor)
     }
 }
