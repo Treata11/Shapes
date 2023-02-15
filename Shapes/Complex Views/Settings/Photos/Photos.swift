@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct Photos: View {
+    let orange = Color(red: 240 / 255, green: 175 / 255, blue: 80 / 255)
+    let gelb = Color(red: 245 / 255, green: 230 / 255, blue: 83 / 255)
+    let lichtgrün = Color(red: 195 / 255, green: 215 / 255, blue: 105 / 255)
+    let dunkelgrün = Color(red: 130 / 255, green: 190 / 255, blue: 150 / 255)
+    let blau = Color(red: 115 / 255, green: 170 / 255, blue: 220 / 255)
+    let violett = Color(red: 160 / 255, green: 140 / 255, blue: 190 / 255)
+    let dunkelrosa = Color(red: 200 / 255, green: 135 / 255, blue: 170 / 255)
+    let rot = Color(red: 225 / 255, green: 120 / 255, blue: 105 / 255)
     
     var RotatedVividCapsule: some View {
-        ForEach(0..<8) { index in
-            RotatedCapsule(
-                rotationAngle: .degrees(Double(index) / Double(8)) * 360.0
-            )
-        }
+        
+        RotatedCapsule(rotationAngle: .degrees(0))
+            .foregroundColor(orange)
+        
+//        ForEach(0..<8) { index in
+//            RotatedCapsule(
+//                rotationAngle: .degrees(Double(index) / Double(8)) * 360.0
+//            )
+//            .foregroundColor(NegarinCapsule.rainbowColor)
+//            // blah blah blah
+//            // iterating through colors somehow here
+//            // to transorm from red to orange
+//            // from orange to yellow
+//            // from yellow to green ...
+//        }
     }
     var body: some View {
         ZStack {
