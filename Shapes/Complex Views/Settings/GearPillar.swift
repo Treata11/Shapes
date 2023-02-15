@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct PillarParameters {
-    
-    // MARK: - ToDo
-    /// make use of segments in creation of pillar
- 
     static let downLeft = CGPoint(x: 65, y: 67)
     static let upTheMiddleLeft = CGPoint(x: 65, y: 32)
     static let upLeft =  CGPoint(x: 52, y: 22)
     static let upTheMiddleRight = CGPoint(x: 82, y: 22)
-    static let midURight = CGPoint(x: 69, y: 32)
-    static let downRight = CGPoint(x: 69, y: 67)
-    static let downTheMiddleRight = CGPoint(x: 69, y: 67)
+    static let midRight = CGPoint(x: 69, y: 32)
+    static let downRight = CGPoint(x: 70, y: 69)
+    static let downTheMiddleRight = CGPoint(x: 64, y: 69)
     static let downTheMiddleLeft = CGPoint(x: 69, y: 67)
 }
 
@@ -29,47 +25,54 @@ struct GearPillar: View {
                 
                 let width = ceil(min(geometry.size.width, geometry.size.height)) / 133
                 let height = width
-                let startPoint = CGPoint(x: 65, y: 32)
-                let endPoint = CGPoint(x: 65, y: 32)
+                let PP = PillarParameters.self
                 
                 path.move(to: CGPoint(
-                    x: width * startPoint.x,
-                    y: height * startPoint.y)
+                    x: PP.downLeft.x * width,
+                    y: PP.downLeft.y * height)
                 )
                 path.addLine(to: CGPoint(
-                    x:65 * width,
-                    y: 32 * height)
+                    x: PP.upTheMiddleLeft.x * width,
+                    y: PP.upTheMiddleLeft.y * height)
                 )
-//                path.addLine(to: CGPoint(
-//                    x: width * 65,
-//                    y: height * 32)
-//                )
                 path.addQuadCurve(
-                    to: CGPoint(x: 52 * width, y: 22 * height),
+                    to: CGPoint(
+                        x: PP.upLeft.x * width,
+                        y: PP.upLeft.y * height
+                    ),
                     control: CGPoint(x: 65 * width, y: 24 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: width * 82,
-                    y: height * 22)
+                    x: PP.upTheMiddleRight.x * width,
+                    y: PP.upTheMiddleRight.y * width)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 69 * width, y: 32 * height),
+                    to: CGPoint(
+                        x: PP.midRight.x * width,
+                        y: PP.midRight.y * height
+                    ),
                     control: CGPoint(x: 69 * width, y: 24 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: width * 69,
-                    y: height * 32)
+                    x: PP.midRight.x * width,
+                    y: PP.midRight.y * height)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 70 * width, y: 69 * height),
+                    to: CGPoint(
+                        x: PP.downRight.x * width,
+                        y: PP.downRight.y * height
+                    ),
                     control: CGPoint(x: 67 * width, y: 67 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: width * 64,
-                    y: height * 69)
+                    x: PP.downTheMiddleRight.x * width,
+                    y: PP.downTheMiddleRight.y * height)
                 )
                 path.addQuadCurve(
-                    to: CGPoint(x: 65 * width, y: 32 * height),
+                    to: CGPoint(
+                        x: PP.upTheMiddleLeft.x * width,
+                        y: PP.upTheMiddleLeft.y * height
+                    ),
                     control: CGPoint(x: 67 * width, y: 67 * height)
                 )
             }
