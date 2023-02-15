@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct Photos: View {
-    let orange = Color(red: 255 / 255, green: 170 / 255, blue: 65 / 255)
-    let gelb = Color(red: 245 / 255, green: 235 / 255, blue: 80 / 255)
-    let lichtgrün = Color(red: 180 / 255, green: 255 / 255, blue: 110 / 255)
-    let dunkelgrün = Color(red: 120 / 255, green: 185 / 255, blue: 175 / 255)
-    let blau = Color(red: 110 / 255, green: 160 / 255, blue: 255 / 255)
-    let violett = Color(red: 185 / 255, green: 95 / 255, blue: 255 / 255)
-    let dunkelrosa = Color(red: 215 / 255, green: 110 / 255, blue: 165 / 255)
-    let rot = Color(red: 255 / 255, green: 120 / 255, blue: 105 / 255)
+    private let colors = [
+        Color(red: 255 / 255, green: 170 / 255, blue: 65 / 255),
+        Color(red: 245 / 255, green: 235 / 255, blue: 80 / 255),
+        Color(red: 180 / 255, green: 255 / 255, blue: 110 / 255),
+        Color(red: 120 / 255, green: 185 / 255, blue: 175 / 255),
+        Color(red: 110 / 255, green: 160 / 255, blue: 255 / 255),
+        Color(red: 185 / 255, green: 95 / 255, blue: 255 / 255),
+        Color(red: 215 / 255, green: 110 / 255, blue: 165 / 255),
+        Color(red: 255 / 255, green: 120 / 255, blue: 105 / 255)
+    ]
     
     var RotatedVividCapsule: some View {
         EmptyView()
@@ -33,22 +35,10 @@ struct Photos: View {
     }
     var body: some View {
         ZStack {
-            RotatedCapsule(rotationAngle: .degrees(0))
-                .foregroundColor(orange)
-            RotatedCapsule(rotationAngle: .A45)
-                .foregroundColor(gelb)
-            RotatedCapsule(rotationAngle: .A90)
-                .foregroundColor(lichtgrün)
-            RotatedCapsule(rotationAngle: .degrees(135))
-                .foregroundColor(dunkelgrün)
-            RotatedCapsule(rotationAngle: .A180)
-                .foregroundColor(blau)
-            RotatedCapsule(rotationAngle: .degrees(225))
-                .foregroundColor(violett)
-            RotatedCapsule(rotationAngle: .A270)
-                .foregroundColor(dunkelrosa)
-            RotatedCapsule(rotationAngle: -.A45)
-                .foregroundColor(rot)
+            ForEach(0..<8) { index in
+                RotatedCapsule(rotationAngle: .degrees(Double(index) / Double(8)) * 360.0)
+                    .foregroundColor(colors[index])
+            }
         }
         .scaledToFit()
     }
@@ -63,7 +53,7 @@ struct RotatedCapsule: View {
     }
 }
 
-// MARK: Framed
+// MARK: Framed Approach 
 
 //struct Photos: View {
 //
