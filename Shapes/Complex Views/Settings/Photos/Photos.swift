@@ -19,8 +19,7 @@ struct Photos: View {
         Color(red: 255 / 255, green: 120 / 255, blue: 105 / 255)
     ]
     
-    var RotatedVividCapsule: some View {
-        EmptyView()
+//    var RotatedVividCapsule: some View {
 //        ForEach(0..<8) { index in
 //            RotatedCapsule(
 //                rotationAngle: .degrees(Double(index) / Double(8)) * 360.0
@@ -32,7 +31,8 @@ struct Photos: View {
 //            // from orange to yellow
 //            // from yellow to green ...
 //        }
-    }
+//    }
+    
     var body: some View {
         ZStack {
             ForEach(0..<8) { index in
@@ -53,7 +53,7 @@ struct RotatedCapsule: View {
     }
 }
 
-// MARK: Framed Approach 
+// MARK: Framed Approach
 
 //struct Photos: View {
 //
