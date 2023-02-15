@@ -9,14 +9,14 @@ import SwiftUI
 
 struct Photos: View {
     private let colors = [
-        Color(red: 255 / 255, green: 170 / 255, blue: 65 / 255),
-        Color(red: 245 / 255, green: 235 / 255, blue: 80 / 255),
+        Color(red: 255 / 255, green: 130 / 255, blue: 35 / 255),
+        Color(red: 255 / 255, green: 255 / 255, blue: 0 / 255),
         Color(red: 180 / 255, green: 255 / 255, blue: 110 / 255),
         Color(red: 120 / 255, green: 185 / 255, blue: 175 / 255),
         Color(red: 110 / 255, green: 160 / 255, blue: 255 / 255),
         Color(red: 185 / 255, green: 95 / 255, blue: 255 / 255),
         Color(red: 215 / 255, green: 110 / 255, blue: 165 / 255),
-        Color(red: 255 / 255, green: 120 / 255, blue: 105 / 255)
+        Color(red: 255 / 255, green: 60 / 255, blue: 60 / 255)
     ]
     
 //    var RotatedVividCapsule: some View {
