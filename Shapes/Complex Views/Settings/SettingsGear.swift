@@ -11,10 +11,8 @@ struct GearWithATooth: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
-//                Ring()
-//                    .scaleEffect(0.77)
-                Trapezoid(insetAmount: 57)
+                let width = min(geometry.size.width, geometry.size.height) / 2.0
+                Trapezoid(insetAmount: 55)
                     .aspectRatio(0.35 ,contentMode: .fit)
                     .scaleEffect(width / 3000)
                     .position(x: width, y: 37.4)
@@ -29,7 +27,7 @@ struct RotatedSettingsGear: View {
     
     var body: some View {
         GearWithATooth()
-            .rotationEffect(angle, anchor: UnitPoint(x: 0.5, y: 0.5))
+            .rotationEffect(angle, anchor: .center)
     }
 }
 
