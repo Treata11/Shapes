@@ -18,10 +18,7 @@ struct Photos: View {
     let rot = Color(red: 225 / 255, green: 120 / 255, blue: 105 / 255)
     
     var RotatedVividCapsule: some View {
-        
-        RotatedCapsule(rotationAngle: .degrees(0))
-            .foregroundColor(orange)
-        
+        EmptyView()
 //        ForEach(0..<8) { index in
 //            RotatedCapsule(
 //                rotationAngle: .degrees(Double(index) / Double(8)) * 360.0
@@ -36,7 +33,22 @@ struct Photos: View {
     }
     var body: some View {
         ZStack {
-            RotatedVividCapsule
+            RotatedCapsule(rotationAngle: .degrees(0))
+                .foregroundColor(orange)
+            RotatedCapsule(rotationAngle: .A45)
+                .foregroundColor(gelb)
+            RotatedCapsule(rotationAngle: .A90)
+                .foregroundColor(lichtgrün)
+            RotatedCapsule(rotationAngle: .degrees(135))
+                .foregroundColor(dunkelgrün)
+            RotatedCapsule(rotationAngle: .A180)
+                .foregroundColor(blau)
+            RotatedCapsule(rotationAngle: .degrees(225))
+                .foregroundColor(violett)
+            RotatedCapsule(rotationAngle: .A270)
+                .foregroundColor(dunkelrosa)
+            RotatedCapsule(rotationAngle: -.A45)
+                .foregroundColor(rot)
         }
         .scaledToFit()
     }
