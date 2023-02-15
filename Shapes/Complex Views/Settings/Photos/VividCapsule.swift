@@ -14,10 +14,10 @@ struct CapsuleParameters {
         let control: CGPoint
     }
     
-    static let α = CGPoint(x: 109, y: 18)
-    static let β = CGPoint(x: 109, y: 60)
-    static let γ = CGPoint(x: 57, y: 60)
-    static let δ = CGPoint(x: 57, y: 18)
+    static let α = CGPoint(x: 109, y: 26)
+    static let β = CGPoint(x: 109, y: 52)
+    static let γ = CGPoint(x: 57, y: 52)
+    static let δ = CGPoint(x: 57, y: 26)
 }
 
 struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persian
@@ -37,7 +37,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
                     y: CapsuleParameters.β.y * height)
                 )
                 path.addArc(
-                    center: CGPoint(x: 83 * width, y: 60 * height),
+                    center: CGPoint(x: 83 * width, y: 52 * height),
                     radius: 26 * width,
                     startAngle: .degrees(0),
                     endAngle: .A180,
@@ -48,7 +48,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
                     y: CapsuleParameters.δ.y * height)
                 )
                 path.addArc(
-                    center: CGPoint(x: 83 * width, y: 18 * height),
+                    center: CGPoint(x: 83 * width, y: 26 * height),
                     radius: 26 * width,
                     startAngle: .A180,
                     endAngle: .degrees(0),
@@ -57,7 +57,6 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
             }
         }
         .opacity(0.666)
-        .aspectRatio(contentMode: .fit)
     }
 }
 
