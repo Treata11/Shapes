@@ -46,7 +46,6 @@ struct SettingsGear: View {
                 .scaleEffect(0.75)
         }
         .aspectRatio(1.0, contentMode: .fit)
-//        .scaleEffect(0.3)
     }
 }
 
@@ -83,7 +82,7 @@ struct SettingsGears: View {
 
 //struct SettingsGear_Previews: PreviewProvider {
 //    static var previews: some View {
-//        SettingsGears(rotationAngle: .A360)
+//        SettingsGears(rotationAngle: .A0)
 //            .aspectRatio(1.0, contentMode: .fit)
 //            .foregroundColor(.gray)
 //    }
