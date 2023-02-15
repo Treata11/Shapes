@@ -24,7 +24,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
     var body: some View {
         GeometryReader { geometry in
 
-            let width = ceil(min(geometry.size.width, geometry.size.height)) / 170
+            let width = min(geometry.size.width, geometry.size.height) / 167
             let height = width
         
             Path { path in
@@ -56,7 +56,6 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
                 )
             }
         }
-        .aspectRatio(contentMode: .fit)
         .opacity(0.666)
     }
 }
