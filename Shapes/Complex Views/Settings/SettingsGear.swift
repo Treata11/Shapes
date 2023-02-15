@@ -7,7 +7,7 @@
 
 import SwiftUI
     
-struct GearWithASingleTooth: View {
+struct GearWithATooth: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -15,9 +15,9 @@ struct GearWithASingleTooth: View {
 //                Ring()
 //                    .scaleEffect(0.77)
                 Trapezoid(insetAmount: 57)
-                    .aspectRatio(0.33 ,contentMode: .fit)
+                    .aspectRatio(0.35 ,contentMode: .fit)
                     .scaleEffect(width / 3000)
-                    .position(x: width, y: 36.8)
+                    .position(x: width, y: 37.4)
             }
         }
         .aspectRatio(1.0, contentMode: .fit)
@@ -28,10 +28,8 @@ struct RotatedSettingsGear: View {
     let angle: Angle
     
     var body: some View {
-        GeometryReader { geometry in
-            GearWithASingleTooth()
-                .rotationEffect(angle, anchor: UnitPoint(x: 0.5, y: 0.5))
-        }
+        GearWithATooth()
+            .rotationEffect(angle, anchor: UnitPoint(x: 0.5, y: 0.5))
     }
 }
 
@@ -45,11 +43,9 @@ struct SettingsGear: View {
     }
     var body: some View {
         ZStack {
-            GeometryReader { geometry in
-                teeth
-                Ring()
-                    .scaleEffect(0.75)
-            }
+            teeth
+            Ring()
+                .scaleEffect(0.75)
         }
         .aspectRatio(1.0, contentMode: .fit)
 //        .scaleEffect(0.3)
@@ -60,11 +56,9 @@ struct WheelDriveGear: View {
     var rotationAngle: Angle
     
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                WheelDrivePillars()
-                SettingsGear()
-            }
+        ZStack {
+            WheelDrivePillars()
+            SettingsGear()
         }
         .rotationEffect(rotationAngle)
         .aspectRatio(1.0, contentMode: .fit)
