@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: ToDo
+// Make this icon a live icon that forms
+// animation when the user's pointer is
+// place upon the icon
+
 struct Settings: View {
     @State private var rotationAngle: Angle = .A0
     

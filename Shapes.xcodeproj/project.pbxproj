@@ -41,7 +41,7 @@
 		61DE5DC129941B9800CE1833 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DC029941B9800CE1833 /* Triangle.swift */; };
 		61DE5DC329942E1900CE1833 /* EquilateralTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DC229942E1900CE1833 /* EquilateralTriangle.swift */; };
 		61DFD72C29918FDB0030971F /* Octagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DFD72B29918FDB0030971F /* Octagon.swift */; };
-		61E8F477299E6A4200C18EDF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8F476299E6A4200C18EDF /* Settings.swift */; };
+		61E8F477299E6A4200C18EDF /* SettingsIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8F476299E6A4200C18EDF /* SettingsIcon.swift */; };
 		61F81ED32997A4220048A903 /* GearPillar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F81ED22997A4220048A903 /* GearPillar.swift */; };
 		61F9F861299013E100179EE1 /* Blobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9F860299013E100179EE1 /* Blobs.swift */; };
 		61FF285229903C3B000B291C /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FF285129903C3B000B291C /* UtilityExtensions.swift */; };
@@ -88,7 +88,7 @@
 		61DE5DC029941B9800CE1833 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		61DE5DC229942E1900CE1833 /* EquilateralTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquilateralTriangle.swift; sourceTree = "<group>"; };
 		61DFD72B29918FDB0030971F /* Octagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagon.swift; sourceTree = "<group>"; };
-		61E8F476299E6A4200C18EDF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		61E8F476299E6A4200C18EDF /* SettingsIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIcon.swift; sourceTree = "<group>"; };
 		61F81ED22997A4220048A903 /* GearPillar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearPillar.swift; sourceTree = "<group>"; };
 		61F9F860299013E100179EE1 /* Blobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blobs.swift; sourceTree = "<group>"; };
 		61FF285129903C3B000B291C /* UtilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtensions.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				61F81ED22997A4220048A903 /* GearPillar.swift */,
 				613E0DE229953310005F77F3 /* SettingsGear.swift */,
 				61189B6E29981E8100623605 /* LoadingView.swift */,
-				61E8F476299E6A4200C18EDF /* Settings.swift */,
+				61E8F476299E6A4200C18EDF /* SettingsIcon.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -367,7 +367,7 @@
 				612C094F29911B4500247E0F /* BadgeBackground.swift in Sources */,
 				61ACD1ED2986C86700F9FFB9 /* Trapezoid.swift in Sources */,
 				61FF285229903C3B000B291C /* UtilityExtensions.swift in Sources */,
-				61E8F477299E6A4200C18EDF /* Settings.swift in Sources */,
+				61E8F477299E6A4200C18EDF /* SettingsIcon.swift in Sources */,
 				61AFFB5B2996CFAB002A5A28 /* Gear.swift in Sources */,
 				61DE5DC329942E1900CE1833 /* EquilateralTriangle.swift in Sources */,
 				61FF2856299042B3000B291C /* Heart.swift in Sources */,
