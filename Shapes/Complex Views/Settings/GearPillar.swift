@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct PillarParameters {
-    static let downLeft = CGPoint(x: 65, y: 67)
-    static let upTheMiddleLeft = CGPoint(x: 65, y: 32)
+    static let midLeft = CGPoint(x: 65, y: 32)
     static let upLeft =  CGPoint(x: 52, y: 22)
-    static let upTheMiddleRight = CGPoint(x: 82, y: 22)
+    static let upRight = CGPoint(x: 82, y: 22)
     static let midRight = CGPoint(x: 69, y: 32)
     static let downRight = CGPoint(x: 70, y: 69)
-    static let downTheMiddleRight = CGPoint(x: 64, y: 69)
-    static let downTheMiddleLeft = CGPoint(x: 69, y: 67)
+    static let downLeft = CGPoint(x: 64, y: 69)
 }
 
 struct GearPillar: View {
@@ -28,12 +26,8 @@ struct GearPillar: View {
                 let PP = PillarParameters.self
                 
                 path.move(to: CGPoint(
-                    x: PP.downLeft.x * width,
-                    y: PP.downLeft.y * height)
-                )
-                path.addLine(to: CGPoint(
-                    x: PP.upTheMiddleLeft.x * width,
-                    y: PP.upTheMiddleLeft.y * height)
+                    x: PP.midLeft.x * width,
+                    y: PP.midLeft.y * height)
                 )
                 path.addQuadCurve(
                     to: CGPoint(
@@ -43,8 +37,8 @@ struct GearPillar: View {
                     control: CGPoint(x: 65 * width, y: 24 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: PP.upTheMiddleRight.x * width,
-                    y: PP.upTheMiddleRight.y * width)
+                    x: PP.upRight.x * width,
+                    y: PP.upRight.y * width)
                 )
                 path.addQuadCurve(
                     to: CGPoint(
@@ -53,10 +47,7 @@ struct GearPillar: View {
                     ),
                     control: CGPoint(x: 69 * width, y: 24 * height)
                 )
-                path.addLine(to: CGPoint(
-                    x: PP.midRight.x * width,
-                    y: PP.midRight.y * height)
-                )
+                /// now
                 path.addQuadCurve(
                     to: CGPoint(
                         x: PP.downRight.x * width,
@@ -65,13 +56,13 @@ struct GearPillar: View {
                     control: CGPoint(x: 67 * width, y: 67 * height)
                 )
                 path.addLine(to: CGPoint(
-                    x: PP.downTheMiddleRight.x * width,
-                    y: PP.downTheMiddleRight.y * height)
+                    x: PP.downLeft.x * width,
+                    y: PP.downLeft.y * height)
                 )
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: PP.upTheMiddleLeft.x * width,
-                        y: PP.upTheMiddleLeft.y * height
+                        x: PP.midLeft.x * width,
+                        y: PP.midLeft.y * height
                     ),
                     control: CGPoint(x: 67 * width, y: 67 * height)
                 )
@@ -108,16 +99,16 @@ struct WheelDrivePillars: View {
     }
 }
 
-//struct GearPillar_Previews: PreviewProvider {
-//    static var previews: some View {
-//        GearPillar()
-//            .foregroundColor(.gray)
-//            .opacity(0.7)
-//    }
-//}
-
-struct WheelDrivePillars_Previews: PreviewProvider {
+struct GearPillar_Previews: PreviewProvider {
     static var previews: some View {
-        WheelDrivePillars()
+        GearPillar()
+            .foregroundColor(.gray)
+            .opacity(0.7)
     }
 }
+
+//struct WheelDrivePillars_Previews: PreviewProvider {
+//    static var previews: some View {
+//        WheelDrivePillars()
+//    }
+//}
