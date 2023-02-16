@@ -29,6 +29,17 @@ extension CGRect {
     /// Create an extension for CGRect that mirrors the lhs or rhs of the current path
 }
 
+//extension LabelStyle {
+//    struct RedBorderedLabelStyle: LabelStyle {
+//        typealias Body = LabelStyleConfiguration
+//        
+//        func makeBody(configuration: Configuration) -> some View {
+//            Label(configuration)
+//                .border(Color.red)
+//        }
+//    }
+//}
+
 extension Angle {
     static let A0 = A90 * 0
     static let A45 = A90 / 2
