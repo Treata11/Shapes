@@ -91,7 +91,6 @@ struct SingleMainDial: View {
                 }
             }
         }
-        .aspectRatio(contentMode: .fit)
     }
 }
 
@@ -117,7 +116,6 @@ struct SingleSubDial: View {
                 }
             }
         }
-        .aspectRatio(contentMode: .fit)
     }
 }
 
@@ -127,7 +125,6 @@ struct RotatedSingleMainDial: View {
     var body: some View {
         SingleMainDial()
             .rotationEffect(angle, anchor: .center)
-    
     }
 }
 
@@ -137,17 +134,15 @@ struct RotatedSingleSubDial: View {
     var body: some View {
         SingleSubDial()
             .rotationEffect(angle, anchor: .center)
-    
     }
 }
 
 struct MainDials: View {
-    
     var RotatedMainDials: some View {
         ForEach(0..<36) { index in
             RotatedSingleMainDial(
-                angle: .degrees(Double(index) / Double(36)) * 360.0
-            )
+                angle: .degrees(Double(index)) * 10
+            )   // (index / 36) * 360
         }
     }
     var body: some View {
@@ -161,21 +156,17 @@ struct MainDials: View {
 }
 
 struct SubDials: View {
-    
     var RotatedSubDials: some View {
         ForEach(0..<36) { index in
             RotatedSingleSubDial(
-                angle: .degrees(Double(index) / Double(36)) * 360.0
-            )
+                angle: .degrees(Double(index)) * 10
+            )   // (index / 36) * 360
         }
     }
     var body: some View {
         ZStack {
-            GeometryReader { geometry in
-                RotatedSubDials
-            }
+            RotatedSubDials
         }
-        .scaledToFit()
     }
 }
 

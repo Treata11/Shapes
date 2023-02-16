@@ -18,7 +18,6 @@ struct GearWithATooth: View {
                     .position(x: width, y: 37.4)
             }
         }
-        .aspectRatio(1.0, contentMode: .fit)
     }
 }
 
@@ -45,7 +44,6 @@ struct SettingsGear: View {
             Ring()
                 .scaleEffect(0.75)
         }
-        .aspectRatio(1.0, contentMode: .fit)
     }
 }
 
@@ -58,7 +56,6 @@ struct WheelDriveGear: View {
             SettingsGear()
         }
         .rotationEffect(rotationAngle)
-        .aspectRatio(1.0, contentMode: .fit)
     }
 }
 
@@ -76,7 +73,6 @@ struct SettingsGears: View {
                 .opacity(0.65)
         }
         .rotationEffect(rotationAngle)
-        .aspectRatio(1.0, contentMode: .fit)
     }
 }
 

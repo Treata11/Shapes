@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PhotosQueryView: View {
-    @State private var rotationAngle: Angle = .degrees(0)
+    @State private var rotationAngle: Angle = .A0
     
     var body: some View {
         RotatingPhotosIcon(angle: rotationAngle)

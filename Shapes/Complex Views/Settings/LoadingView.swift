@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LoadingView: View {
-
     @State private var rotaionAngle: Angle = .A0
     @State private var linearRotationAngle: Angle = .A0
     

@@ -37,7 +37,9 @@ struct Photos: View {
     var body: some View {
         ZStack {
             ForEach(0..<8) { index in
-                RotatedCapsule(rotationAngle: .degrees(Double(index) / Double(8)) * 360.0)
+                RotatedCapsule(rotationAngle:
+                        .degrees(Double(index)) * 45
+                )   // (index / 8) * 360
                     .foregroundColor(colors[index])
             }
         }
