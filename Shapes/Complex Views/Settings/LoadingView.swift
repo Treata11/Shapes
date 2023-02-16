@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct LoadingView: View {
-    @State private var rotaionAngle: Angle = .A0
+    @State private var rotationAngle: Angle = .A0
     @State private var linearRotationAngle: Angle = .A0
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                WheelDriveGear(rotationAngle: rotaionAngle)
+                WheelDriveGear(rotationAngle: rotationAngle)
                     .onAppear {
                         withAnimation(.easeInOut(duration: 12).repeatForever(autoreverses: false)) {
-                            rotaionAngle += .A360
+                            rotationAngle += .A360
                         }
                     }
                 

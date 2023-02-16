@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct Settings: View {
+    @State private var rotationAngle: Angle = .A0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Label() {
+            Text("")
+        } icon: {
+            ZStack {
+                WheelDriveGear(rotationAngle: rotationAngle)
+                SettingsGears(rotationAngle: rotationAngle)
+            }
+            .aspectRatio(contentMode: .fit)
+            .foregroundColor(.gray)
+        }
+        .labelStyle(.iconOnly)
     }
 }
 
