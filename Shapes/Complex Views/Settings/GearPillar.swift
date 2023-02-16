@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PillarParameters {
     static let midLeft = CGPoint(x: 65, y: 32)
-    static let upLeft =  CGPoint(x: 52, y: 22)
-    static let upRight = CGPoint(x: 82, y: 22)
+    static let upLeft =  CGPoint(x: 52, y: 23)
+    static let upRight = CGPoint(x: 82, y: 23)
     static let midRight = CGPoint(x: 69, y: 32)
     static let downRight = CGPoint(x: 70, y: 69)
     static let downLeft = CGPoint(x: 64, y: 69)
@@ -34,7 +34,7 @@ struct GearPillar: View {
                         x: PP.upLeft.x * width,
                         y: PP.upLeft.y * height
                     ),
-                    control: CGPoint(x: 65 * width, y: 24 * height)
+                    control: CGPoint(x: 65 * width, y: 25 * height)
                 )
                 path.addLine(to: CGPoint(
                     x: PP.upRight.x * width,
@@ -45,7 +45,7 @@ struct GearPillar: View {
                         x: PP.midRight.x * width,
                         y: PP.midRight.y * height
                     ),
-                    control: CGPoint(x: 69 * width, y: 24 * height)
+                    control: CGPoint(x: 69 * width, y: 25 * height)
                 )
                 /// now
                 path.addQuadCurve(
