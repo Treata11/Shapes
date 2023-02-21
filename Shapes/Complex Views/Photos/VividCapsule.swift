@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CapsuleParameters {
+private struct CapsuleParameters {
     static let α = CGPoint(x: 109, y: 26)
     static let β = CGPoint(x: 109, y: 52)
     static let γ = CGPoint(x: 57, y: 52)
@@ -25,7 +25,6 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
     
     var body: some View {
         GeometryReader { geometry in
-
             let width = min(geometry.size.width, geometry.size.height) / 166
             let height = width
         
@@ -65,7 +64,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
     }
 }
 
-struct VividCapsule_Previews: PreviewProvider {
+struct NegarinCapsule_Previews: PreviewProvider {
     static var previews: some View {
         NegarinCapsule()
     }

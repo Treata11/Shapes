@@ -147,11 +147,8 @@ struct MainDials: View {
     }
     var body: some View {
         ZStack {
-            GeometryReader { geometry in
-                RotatedMainDials
-            }
+            RotatedMainDials
         }
-        .scaledToFit()
     }
 }
 
@@ -171,7 +168,6 @@ struct SubDials: View {
 }
 
 struct Dials: View {
-    
     var body: some View {
         ZStack {
             GeometryReader { geometry in

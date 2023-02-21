@@ -7,7 +7,7 @@
 
 import SwiftUI
     
-struct GearWithATooth: View {
+private struct GearWithATooth: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -21,7 +21,7 @@ struct GearWithATooth: View {
     }
 }
 
-struct RotatedSettingsGear: View {
+private struct RotatedSettingsGear: View {
     let angle: Angle
     
     var body: some View {

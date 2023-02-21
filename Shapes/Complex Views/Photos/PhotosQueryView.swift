@@ -20,7 +20,7 @@ struct PhotosQueryView: View {
     }
 }
 
-struct RotatingPhotosIcon: View {
+private struct RotatingPhotosIcon: View {
     let angle: Angle
     
     var body: some View {

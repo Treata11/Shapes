@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NeedleParameters {
+private struct NeedleParameters {
     struct Segment {
         let line: CGPoint
         let curve: CGPoint
@@ -33,7 +33,7 @@ struct NeedleParameters {
     ]
 }
 
-struct HalfNeedle: View {
+private struct HalfNeedle: View {
     var body: some View {
         GeometryReader { geo in
            
@@ -59,7 +59,7 @@ struct HalfNeedle: View {
     }
 }
 
-struct RotatedHalfNeedle: View {
+private struct RotatedHalfNeedle: View {
     var angle: Angle
     
     var body: some View {

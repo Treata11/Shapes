@@ -61,7 +61,7 @@ struct GearPillar: View {
     }
 }
 
-struct PillarParameters {
+private struct PillarParameters {
     static let midLeft = CGPoint(x: 65, y: 32)
     static let upLeft =  CGPoint(x: 52, y: 23)
     static let upRight = CGPoint(x: 82, y: 23)
@@ -69,7 +69,6 @@ struct PillarParameters {
     static let downRight = CGPoint(x: 70, y: 69)
     static let downLeft = CGPoint(x: 64, y: 69)
 }
-
 
 struct RotatedGearPillars: View {
     let angle: Angle

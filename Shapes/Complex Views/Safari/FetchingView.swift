@@ -7,17 +7,6 @@
 
 import SwiftUI
 
-struct RotatingCompassNeedle: View {
-    let angle: Angle
-    
-    var body: some View {
-        ZStack {
-            CompassNeedle()
-        }
-        .rotationEffect(angle)
-    }
-}
-
 struct FetchingView: View {
     @State private var rotationAngle: Angle = .degrees(50)
     
@@ -32,6 +21,17 @@ struct FetchingView: View {
                 }
         }
         .padding()
+    }
+}
+
+private struct RotatingCompassNeedle: View {
+    let angle: Angle
+    
+    var body: some View {
+        ZStack {
+            CompassNeedle()
+        }
+        .rotationEffect(angle)
     }
 }
 
