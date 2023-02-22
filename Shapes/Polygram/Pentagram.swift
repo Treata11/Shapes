@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PentagramParameters {
+private struct PentagramParameters {
     
     struct Segment {
         let line: CGPoint
@@ -46,22 +46,38 @@ struct PentagramParameters {
     ]
 }
 
-struct Pentagram: View {
+// MARK: - ToDo
+// How to make a struct that conforms to view,
+// be conforming to InsettableShape
+// i.e. how to get a return type of Path
+// instead of the Geometry<Path> from the
+// var body that draws the Pentagram
+
+struct Pentagram: View, Animatable {
+    var insetAmount = 0.0
+    
+//    func inset(by amount: CGFloat) -> some InsettableShape {
+//        var line = self
+//        line.insetAmount += amount
+//        return line
+//    }
+    
     var body: some View {
         GeometryReader { geometry in
-            
             Path { path in
-                
                 let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
                 let height = width
 //                let xScale: CGFloat = 0.832
 //                let xOffset = (width * (1.0 - xScale)) / 2.0
 //                width *= xScale
-                let startPoint = CGPoint(x: 1.951057 * width, y: 0.690983 * height)
+                let α = CGPoint(
+                    x: PentagramParameters.segments.first!.line.x,
+                    y: PentagramParameters.segments.first!.line.y
+                )
                 
                 path.move(to: CGPoint(
-                    x: startPoint.x,
-                    y: startPoint.y)
+                    x: α.x * width,
+                    y: α.y * height)
                 )
                 
                 PentagramParameters.segments.forEach { segment in
