@@ -41,7 +41,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
                     center: CGPoint(x: 83 * width, y: 52 * height),
                     radius: 26 * width,
                     startAngle: .degrees(0),
-                    endAngle: .A180,
+                    endAngle: .a180,
                     clockwise: false
                 )
                 path.addLine(to: CGPoint(
@@ -51,7 +51,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
                 path.addArc(
                     center: CGPoint(x: 83 * width, y: 26 * height),
                     radius: 26 * width,
-                    startAngle: .A180,
+                    startAngle: .a180,
                     endAngle: .degrees(0),
                     clockwise: false
                 )

@@ -70,7 +70,7 @@ private struct RotatedHalfNeedle: View {
 
 struct CompassNeedle: View {
     var Needle: some View {
-        RotatedHalfNeedle(angle: .A180)
+        RotatedHalfNeedle(angle: .a180)
     }
     
     var body: some View {

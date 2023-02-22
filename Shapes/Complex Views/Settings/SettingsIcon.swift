@@ -13,7 +13,7 @@ import SwiftUI
 // place upon the icon
 
 struct Settings: View {
-    @State private var rotationAngle: Angle = .A0
+    @State private var rotationAngle: Angle = .a0
     
     var body: some View {
         Label() {

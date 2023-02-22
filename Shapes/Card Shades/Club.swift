@@ -29,17 +29,17 @@ struct Club: Shape {
             p.move(to: center)
             p.addArc(center: center1,
                      radius: radius,
-                startAngle: .A360,
+                startAngle: .a360,
                 endAngle: .zero,
                 clockwise: true)
             p.addArc(center: center2,
                     radius: radius,
-                    startAngle: .A360,
+                    startAngle: .a360,
                     endAngle: .zero,
                     clockwise: true)
             p.addArc(center: center3,
                      radius: radius,
-                 startAngle: .A360,
+                 startAngle: .a360,
                     endAngle: .zero,
                     clockwise: true)
             p.move(to: center)

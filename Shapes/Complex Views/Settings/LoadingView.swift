@@ -9,8 +9,8 @@ import SwiftUI
 
 struct LoadingView: View {
     
-    @State private var rotationAngle: Angle = .A0
-    @State private var linearRotationAngle: Angle = .A0
+    @State private var rotationAngle: Angle = .a0
+    @State private var linearRotationAngle: Angle = .a0
     
     var body: some View {
         GeometryReader { geometry in
@@ -18,7 +18,7 @@ struct LoadingView: View {
                 WheelDriveGear(rotationAngle: rotationAngle)
                     .onAppear {
                         withAnimation(.easeInOut(duration: 12).repeatForever(autoreverses: false)) {
-                            rotationAngle += .A360
+                            rotationAngle += .a360
                         }
                     }
                 
@@ -26,7 +26,7 @@ struct LoadingView: View {
                     .rotationEffect(linearRotationAngle)
                     .onAppear {
                         withAnimation(.linear(duration: 18).repeatForever(autoreverses: false)) {
-                            linearRotationAngle -= .A360
+                            linearRotationAngle -= .a360
                         }
                     }
             }

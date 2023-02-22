@@ -17,23 +17,23 @@ struct Diamond: Shape {
             p.move(to: lowerPoint)
             p.addArc(center: CGPoint(x: x, y: (y + height)),
                 radius: (width / 2),
-                startAngle: .A360,
-                endAngle: .A270,
+                startAngle: .a360,
+                endAngle: .a270,
                 clockwise: true)
             p.addArc(center: CGPoint(x: x, y: y),
                      radius: (width / 2),
-                     startAngle: .A90,
+                     startAngle: .a90,
                      endAngle: .zero,
                      clockwise: true)
             p.addArc(center: CGPoint(x: x + width, y: y),
                      radius: (width / 2),
-                     startAngle: .A180,
-                     endAngle: .A90,
+                     startAngle: .a180,
+                     endAngle: .a90,
                      clockwise: true)
             p.addArc(center: CGPoint(x: x + width, y: y + height),
                      radius: (width / 2),
-                     startAngle: .A270 ,
-                     endAngle: .A180,
+                     startAngle: .a270 ,
+                     endAngle: .a180,
                      clockwise: true)
         }
         return path

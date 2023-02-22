@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct PhotosQueryView: View {
-    @State private var rotationAngle: Angle = .A0
+    @State private var rotationAngle: Angle = .a0
     
     var body: some View {
         RotatingPhotosIcon(angle: rotationAngle)
             .onAppear {
                 withAnimation(.linear(duration: 6).repeatForever(autoreverses: false)) {
-                    rotationAngle += .A360
+                    rotationAngle += .a360
                 }
             }
     }

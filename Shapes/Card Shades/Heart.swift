@@ -19,12 +19,12 @@ struct Heart: Shape {
                        control2: CGPoint(x: x, y: (y + (height / 2))))
             p.addArc(center: CGPoint(x: (x + (width / 4)), y: (y + (height / 4))),
                 radius: (width / 4),
-                startAngle: .A180,
+                startAngle: .a180,
                 endAngle: .zero,
                 clockwise: false)
             p.addArc(center: CGPoint(x: (x + (width * 0.75)), y: (y + (height / 4))),
                 radius: (width / 4),
-                startAngle: .A180,
+                startAngle: .a180,
                 endAngle: .zero,
                 clockwise: false)
             p.addCurve(to: lowerPoint,
