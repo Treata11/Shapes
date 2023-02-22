@@ -50,6 +50,6 @@ extension Angle {
     static let a360 = Angle(degrees: 360)
     ///Radians
     static let π = Angle(radians: .pi)
-    static let r0 = Angle(radians: 0
+    static let r0 = Angle(radians: 0)
 }
 
