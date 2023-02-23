@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var insetAmount = 50.0
 
+    @Environment(\.appearance) private var appearance
+    
     var body: some View {
         HStack {
             GeometryReader { geometry in
