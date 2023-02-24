@@ -28,11 +28,4 @@ extension EnvironmentValues {
     }
 }
 
-//struct Appearance {
-//    var minimalist: Bool
-//    init(fancy: Bool) {
-//        minimalist = fancy ? false : true
-//    }
-//}
-
 
