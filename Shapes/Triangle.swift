@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Triangle: InsettableShape {
-    
     var insetAmount = 0.0
     
     func path(in rect: CGRect) -> Path {
@@ -33,7 +32,8 @@ struct Triangle: InsettableShape {
 struct Triangle_Previews: PreviewProvider {
     static var previews: some View {
         Triangle()
-            .aspectRatio(1.5, contentMode: .fit)
+            .strokeBorder(lineWidth: 17)
+            .aspectRatio(1.5, contentMode: .fill)
             .foregroundColor(.accentColor)
     }
 }

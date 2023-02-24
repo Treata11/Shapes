@@ -47,7 +47,7 @@ struct ClockFace: View {
     }
 }
 
-struct ClockFace_Previews: PreviewProvider {
+struct 🕕_Previews: PreviewProvider {
     static var previews: some View {
         ClockFace()
     }

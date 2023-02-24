@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OctagonParameters {
+private struct OctagonParameters {
     
     struct Segment {
         let line: CGPoint
@@ -67,18 +67,22 @@ struct Octagon: View {
                 
                 let width: CGFloat = min(geometry.size.width, geometry.size.height) / 2
                 let height = width
+                let α = CGPoint(
+                    x: OctagonParameters.segments.first!.line.x,
+                    y: OctagonParameters.segments.first!.line.y
+                )
                 
                 path.move(
                     to: CGPoint(
-                        x: width * 1.0,
-                        y: height * (0.0 + OctagonParameters.adjustment)
+                        x: α.x * width,
+                        y: α.y * height
                     )
                 )
                 
                 OctagonParameters.segments.forEach { segment in
                     path.addLine(to: CGPoint(
-                            x: width * segment.line.x,
-                            y: height * segment.line.y
+                            x:segment.line.x * width,
+                            y:segment.line.y * height
                         )
                     )
                 }
@@ -91,8 +95,8 @@ struct Octagon: View {
         }
         .aspectRatio(1, contentMode: .fit)
     }
-    static let gradientStart = Color(red: 30 / 255, green: 180 / 255, blue: 220 / 255)
-    static let gradientEnd = Color(red: 172.0 / 255, green: 139.0 / 255, blue: 255 / 255)
+//    static let gradientStart = Color(red: 30 / 255, green: 180 / 255, blue: 220 / 255)
+//    static let gradientEnd = Color(red: 172.0 / 255, green: 139.0 / 255, blue: 255 / 255)
 }
 
 struct Octagon_Previews: PreviewProvider {

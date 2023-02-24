@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EquilateralTriangleParameters {
+private struct EquilateralTriangleParameters {
     
         struct Segment {
             let line: CGPoint
@@ -35,22 +35,20 @@ struct EquilateralTriangleParameters {
 }
 
 struct EquilateralTriangle: View {
-    
     var rotationAngle: Angle
     
     var body: some View {
         GeometryReader { geometry in
-            
-            let center = UnitPoint.center
-            
-            Path { path in
-                
             let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
             let height = width
-                
+            let ζ = CGPoint(
+                x: EquilateralTriangleParameters.segments.first!.line.x,
+                y: EquilateralTriangleParameters.segments.first!.line.y
+            )
+            Path { path in
                 path.move(to: CGPoint(
-                    x: width * 1.8660254 * width,
-                    y: 1.5 * height)
+                    x: ζ.x * width,
+                    y: ζ.y * height)
                 )
                 
                 EquilateralTriangleParameters.segments.forEach { segment in
@@ -60,12 +58,9 @@ struct EquilateralTriangle: View {
                     )
                 }
             }
-            .rotationEffect(
-                rotationAngle,
-                anchor: center
-            )
+            .rotationEffect(rotationAngle, anchor: .center)
         }
-        .aspectRatio(1.0 ,contentMode: .fit)
+        .aspectRatio(contentMode: .fit)
     }
 }
 

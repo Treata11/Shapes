@@ -1,5 +1,5 @@
 //
-//  HexagonParameters.swift
+//  HexagonParameterz.swift
 //  Shapes
 //
 //  Created by Treata Norouzi on 2/6/23.
@@ -7,7 +7,7 @@
 
 import CoreGraphics
 
-struct HexagonParameters {
+struct HexagonParameterz {
     struct Segment {
         let line: CGPoint
         let curve: CGPoint

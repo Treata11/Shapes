@@ -10,7 +10,6 @@
 		611594C329953C5B00E9E557 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611594C229953C5B00E9E557 /* Ring.swift */; };
 		611594C629953E8E00E9E557 /* Infinity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611594C529953E8E00E9E557 /* Infinity.swift */; };
 		61189B6F29981E8100623605 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61189B6E29981E8100623605 /* LoadingView.swift */; };
-		6119F6622993DAE000DAC60F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119F6612993DAE000DAC60F /* Star.swift */; };
 		611E3498299A55E1005994E6 /* CompassNeedle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E3497299A55E1005994E6 /* CompassNeedle.swift */; };
 		611E349C299A5BBB005994E6 /* SafariCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E349B299A5BBB005994E6 /* SafariCompass.swift */; };
 		611E349E299A5FEA005994E6 /* FetchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E349D299A5FEA005994E6 /* FetchingView.swift */; };
@@ -57,7 +56,6 @@
 		611594C229953C5B00E9E557 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		611594C529953E8E00E9E557 /* Infinity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity.swift; sourceTree = "<group>"; };
 		61189B6E29981E8100623605 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		6119F6612993DAE000DAC60F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		611E3497299A55E1005994E6 /* CompassNeedle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassNeedle.swift; sourceTree = "<group>"; };
 		611E349B299A5BBB005994E6 /* SafariCompass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariCompass.swift; sourceTree = "<group>"; };
 		611E349D299A5FEA005994E6 /* FetchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingView.swift; sourceTree = "<group>"; };
@@ -226,7 +224,6 @@
 				61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */,
 				61ACD1E32986C83C00F9FFB9 /* Shapes.entitlements */,
 				61ACD1E42986C83C00F9FFB9 /* Preview Content */,
-				6119F6612993DAE000DAC60F /* Star.swift */,
 				61DE5DC029941B9800CE1833 /* Triangle.swift */,
 				61DE5DC229942E1900CE1833 /* EquilateralTriangle.swift */,
 				61F4236429A6CB5800F51F74 /* PropertyWrappers.swift */,
@@ -370,7 +367,6 @@
 				61B0165929915D1700CB820E /* RotatedBadgeSymbol.swift in Sources */,
 				61B01657299157B000CB820E /* BadgeSymbol.swift in Sources */,
 				6128A6EB2995021F003ED4FD /* Dodecagram.swift in Sources */,
-				6119F6622993DAE000DAC60F /* Star.swift in Sources */,
 				61DE5DC129941B9800CE1833 /* Triangle.swift in Sources */,
 				61F9F861299013E100179EE1 /* Blobs.swift in Sources */,
 				611E3498299A55E1005994E6 /* CompassNeedle.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PentagonParameters {
+private struct PentagonParameters {
     
     struct Segment {
         let line: CGPoint
@@ -54,20 +54,24 @@ struct Pentagon: View {
                 
                 let width: CGFloat = ceil(min(geometry.size.width, geometry.size.height)) / 2
                 let height = width
+                let α = CGPoint(
+                    x: PentagonParameters.segments.first!.line.x,
+                    y: PentagonParameters.segments.first!.line.y
+                )
                 
 ///                path.move(to: PentagonParameters.segments.first!.line)
                 path.move(
                     to: CGPoint(
-                        x: width * 1.9510565,
-                        y: height * (0.690983)
+                        x: α.x * width,
+                        y: α.y * height
                     )
                 )
                 
                 PentagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
-                            x: width * segment.line.x,
-                            y: height * segment.line.y
+                            x: segment.line.x * width,
+                            y: segment.line.y * height
                         )
                     )
 //                    path.addQuadCurve(

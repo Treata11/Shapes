@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HexagonParameterz {
+private struct HexagonParameters {
     
     struct Segment {
         let line: CGPoint
@@ -53,17 +53,20 @@ struct HexagonParameterz {
 struct Hexagon: View {
     var body: some View {
         GeometryReader { geometry in
-            
             let width = ceil(min(geometry.size.width, geometry.size.height)) / 2.0
             let height = width
+            let α = CGPoint(
+                x: HexagonParameters.segments.first!.line.x,
+                y: HexagonParameters.segments.first!.line.y
+            )
             
             Path { path in
                 path.move(to: CGPoint(
-                    x: width * 2,
-                    y: height)
+                    x: α.x * width,
+                    y: α.y * height)
                 )
                 
-                HexagonParameterz.segments.forEach { segment in
+                HexagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
                             x: width * segment.line.x,
@@ -72,7 +75,7 @@ struct Hexagon: View {
                 }
             }
         }
-        .aspectRatio(1, contentMode: .fit)
+        .aspectRatio(contentMode: .fit)
     }
 }
 
