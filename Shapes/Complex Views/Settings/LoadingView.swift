@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoadingView: View {
+    // MARK: ToDo
+    // has to confirm to ProgressView
     
     @State private var rotationAngle: Angle = .a0
     @State private var linearRotationAngle: Angle = .a0

@@ -33,7 +33,14 @@ struct ContentView: View {
 //                    .position(x: 300, y: 250)
 //                Hexagram()
 //                    .frame(width: dedicatedWidth, height: dedicatedHeight)
-                appearance == .fancy ? LoadingView().foregroundColor(.gray) as! ProgressView<EmptyView, EmptyView> : ProgressView()
+                
+                if appearance == .fancy {
+                    LoadingView()
+                } else {
+                    ProgressView()
+                }
+                // MARK: ToDo
+//                appearance == .fancy ? LoadingView() : ProgressView()
             }
         }
         .aspectRatio(contentMode: .fit)
