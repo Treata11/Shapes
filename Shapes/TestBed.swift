@@ -115,7 +115,7 @@ struct ScrollOrNotScroll: View { // That is the question
 
 struct UsernameValidation: View {
     @State private var username: String = ""
-    @FocusState private var emailFieldIsFocused: Bool 
+    @FocusState private var emailFieldIsFocused: Bool
 
     var body: some View {
         TextField(
@@ -135,9 +135,30 @@ struct UsernameValidation: View {
     }
 }
 
-struct UsernameValidation_Previews: PreviewProvider {
-    static var previews: some View {
-        UsernameValidation()
+//struct UsernameValidation_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UsernameValidation()
+//    }
+//}
+
+struct TextFieldPrompt: View {
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
+    var body: some View {
+        Form {
+            TextField(text: $username, prompt: Text("Required")) {
+                Text("Username")
+            }
+            SecureField(text: $password, prompt: Text("Required")) {
+                Text("Password")
+            }
+        }
     }
 }
 
+struct TextFieldPrompt_Previews: PreviewProvider {
+    static var previews: some View {
+        TextFieldPrompt()
+    }
+}
