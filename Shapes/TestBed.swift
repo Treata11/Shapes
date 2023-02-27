@@ -105,8 +105,39 @@ struct ScrollOrNotScroll: View { // That is the question
     }
 }
 
-struct ScrollOrNotScroll_Previews: PreviewProvider {
-    static var previews: some View {
-        ScrollOrNotScroll()
+//struct ScrollOrNotScroll_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ScrollOrNotScroll()
+//    }
+//}
+
+// MARK: - TextField
+
+struct UsernameValidation: View {
+    @State private var username: String = ""
+    @FocusState private var emailFieldIsFocused: Bool 
+
+    var body: some View {
+        TextField(
+            "User name (email address)",
+            text: $username
+        )
+        .focused($emailFieldIsFocused)
+        .onSubmit {
+//            validate(name: username)
+        }
+        .textInputAutocapitalization(.never)
+        .disableAutocorrection(true)
+        .border(.secondary)
+
+        Text(username)
+            .foregroundColor(emailFieldIsFocused ? .red : .blue)
     }
 }
+
+struct UsernameValidation_Previews: PreviewProvider {
+    static var previews: some View {
+        UsernameValidation()
+    }
+}
+
