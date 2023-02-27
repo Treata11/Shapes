@@ -26,11 +26,11 @@ private struct EditableText: View {
     }
 }
 
-struct EditableText_Previews: PreviewProvider {
-    static var previews: some View {
-        EditableText()
-    }
-}
+//struct EditableText_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EditableText()
+//    }
+//}
 
 private struct DeterminateProgress: View {
     @State private var progress = 0.1
@@ -76,3 +76,37 @@ struct DarkBlueShadowProgressViewStyle: ProgressViewStyle {
 //        ShadowedProgressViews()
 //    }
 //}
+
+import SwiftUI
+struct ScrollOrNotScroll: View { // That is the question
+    @State var showFullText: Bool = false
+    
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 12) {
+                Text ("Anti Hero").font(.title.weight(.bold))
+                Button(action: {
+                    showFullText.toggle()
+                }, label: {
+                    Text("\(showFullText ? "Hide" : "Show") Lyrics")
+                })
+                .buttonStyle(.borderedProminent)
+                if showFullText {
+                    Text("antiHero").font(.body.weight (.medium))
+                }
+            }
+            .padding()
+            .frame(width: .infinity, alignment: .leading)
+        }
+        .animation(.spring(), value: showFullText)
+//        .scrollBounceBehavior(.basedOnSize, axes: .vertical)
+//        .fontDesign(.rounded)
+        // Only bounce if we have content big enough to need a scroll
+    }
+}
+
+struct ScrollOrNotScroll_Previews: PreviewProvider {
+    static var previews: some View {
+        ScrollOrNotScroll()
+    }
+}
