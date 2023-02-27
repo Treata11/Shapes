@@ -157,8 +157,35 @@ struct TextFieldPrompt: View {
     }
 }
 
-struct TextFieldPrompt_Previews: PreviewProvider {
+//struct TextFieldPrompt_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TextFieldPrompt()
+//    }
+//}
+
+struct StyledTextField: View {
+    @State private var givenName: String = ""
+    @State private var familyName: String = ""
+
+    var body: some View {
+        VStack {
+            TextField(
+                "Given Name",
+                text: $givenName
+            )
+            .disableAutocorrection(true)
+            TextField(
+                "Family Name",
+                text: $familyName
+            )
+            .disableAutocorrection(true)
+        }
+        .textFieldStyle(.roundedBorder)
+    }
+}
+
+struct StyledTextField_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldPrompt()
+        StyledTextField()
     }
 }
