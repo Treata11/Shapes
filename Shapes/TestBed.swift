@@ -193,29 +193,32 @@ struct StyledTextField: View {
 struct ScalarAnimatedText: View {
     let name: String
     let text: String
-    let fontScale: CGFloat
+    var fontScale: CGFloat
     
     var body: some View {
-        var myFont = Font.custom(name, size: fontScale, relativeTo: Font.TextStyle.body)
+        let myFont = Font.custom(name, size: fontScale, relativeTo: Font.TextStyle.body)
         Text(text)
             .font(myFont)
     }
 }
 
 struct TestBeddingScalarAnimatedText: View {
+    @State var scale: CGFloat = 10
+    
     var body: some View {
-        var scale: CGFloat = 1.0
-        ScalarAnimatedText(name: "Test", text: "⭐️", fontScale: scale)
-        onTapGesture {
-            withAnimation {
-                scale += 1.0
+        ScalarAnimatedText(name: "Test", text: "Hello, World!", fontScale: scale)
+            .onTapGesture {
+                withAnimation {
+                    scale += CGFloat(1)
+                }
             }
-        }
     }
 }
 
 struct TestBeddingScalarAnimatedText_Previews: PreviewProvider {
     static var previews: some View {
+//        ScalarAnimatedText(name: "Init", text: "Hello, World!", fontScale: 1000)
+//            .padding()
         TestBeddingScalarAnimatedText()
     }
 }
