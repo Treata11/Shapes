@@ -58,7 +58,7 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
 //            .fill(Self.rainbowColor)
         }
         .opacity(0.5)
-        .shadow(radius: 7)
+        .shadow(radius: 5)
 //        .saturation(1.12)
 //        .contrast(1.1)
     }

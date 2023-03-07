@@ -19,14 +19,6 @@ struct Photos: View {
         Color(.red)
     ]
     
-//    private func dealAnimation(for capsule: any View) -> Animation {
-//        var delay = 0.0
-//        if let index = game.cards.firstIndex(where: { $0.id == card.id }) {
-//            delay = Double(index) * (DrawingConstants.totalDealDuration / Double(game.cards.count))
-//        }
-//        return Animation.easeInOut(duration: DrawingConstants.dealDuration).delay(delay)
-//    }
-    
 //    var RotatedVividCapsule: some View {
     
 //        ForEach(0..<8) { index in
@@ -45,7 +37,7 @@ struct Photos: View {
     var body: some View {
         ZStack {
             ForEach(0..<8) { index in
-                RotatedCapsule(index: index,rotationAngle:
+                RotatedCapsule(rotation:
                         .degrees(Double(index)) * 45
                 )   // (index / 8) * 360
                     .foregroundColor(colors[index])
@@ -55,13 +47,18 @@ struct Photos: View {
     }
 }
 
-struct RotatedCapsule: View {
-    let index: Int
-    let rotationAngle: Angle
+private struct RotatedCapsule: View {
+    let rotation: Angle
     
     var body: some View {
         NegarinCapsule()
-            .rotationEffect(rotationAngle, anchor: .center)
+            .rotationEffect(rotation, anchor: .center)
+    }
+}
+
+struct Photos_Previews: PreviewProvider {
+    static var previews: some View {
+        Photos()
     }
 }
 
@@ -118,9 +115,3 @@ struct RotatedCapsule: View {
 //            .opacity(0.75)
 //    }
 //}
-
-struct Photos_Previews: PreviewProvider {
-    static var previews: some View {
-        Photos()
-    }
-}
