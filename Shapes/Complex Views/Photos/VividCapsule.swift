@@ -21,7 +21,6 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
     // indecies in Photos.swift to make the
     // code much cleaner and easier to read.
 ///    static var rainbowColor = Color(red: 240 / 255, green: 175 / 255, blue: 80 / 255)
-    // MARK: -
     
     var body: some View {
         GeometryReader { geometry in
@@ -58,7 +57,8 @@ struct NegarinCapsule: View {   // Negarin is the translation of Vivid in Persia
             }
 //            .fill(Self.rainbowColor)
         }
-        .opacity(0.66)
+        .opacity(0.5)
+        .shadow(radius: 7)
 //        .saturation(1.12)
 //        .contrast(1.1)
     }

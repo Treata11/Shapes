@@ -203,13 +203,13 @@ struct ScalarAnimatedText: View {
 }
 
 struct TestBeddingScalarAnimatedText: View {
-    @State var scale: CGFloat = 10
+    @State var scale: CGFloat = 26
     
     var body: some View {
-        ScalarAnimatedText(name: "Test", text: "Hello, World!", fontScale: scale)
+        ScalarAnimatedText(name: "Test", text: "😍", fontScale: scale)
             .onTapGesture {
                 withAnimation {
-                    scale += CGFloat(1)
+                    scale += 3
                 }
             }
     }
