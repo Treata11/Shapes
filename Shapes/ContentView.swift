@@ -34,8 +34,9 @@ struct ContentView: View {
 //                Hexagram()
 //                    .frame(width: dedicatedWidth, height: dedicatedHeight)
                 
-                if appearance == .fancy {
+                if appearance == .minimalist {
                     LoadingView()
+                    EnhacedPhotos()
                 } else {
                     ProgressView()
                 }
