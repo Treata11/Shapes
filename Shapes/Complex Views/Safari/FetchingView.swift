@@ -14,6 +14,7 @@ struct FetchingView: View {
         ZStack {
             Dials()
             RotatingCompassNeedle(angle: rotationAngle)
+                .shadow(radius: 10)
                 .onAppear {
                     withAnimation(.easeInOut(duration: 3).repeatForever()) {
                         rotationAngle -= .degrees(100)
@@ -32,7 +33,6 @@ private struct RotatingCompassNeedle: View {
             CompassNeedle()
         }
         .rotationEffect(angle)
-        .shadow(radius: 10)
     }
 }
 

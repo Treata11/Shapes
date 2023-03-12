@@ -173,13 +173,13 @@ struct Dials: View {
             GeometryReader { geometry in
                 Circle()
                     .foregroundColor(.accentColor)
+                    .shadow(radius: 10)
                 MainDials()
                 SubDials()
                     .rotationEffect(.degrees(5))
             }
             .foregroundColor(.white)
         }
-        .shadow(radius: 5)
         .scaledToFit()
     }
 }

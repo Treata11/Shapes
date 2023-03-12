@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct EnhacedPhotos: View {
-    
     @State var rotationAngle: Angle = .a45
     
     var body: some View {
@@ -16,7 +15,7 @@ struct EnhacedPhotos: View {
             ForEach(0..<8) { index in
                 var precededIndices = index
                 Shape.capsules[index]
-                    .onAppear {
+                    .onHover { _ in
                         while precededIndices >= 0 {
                             withAnimation(dealAnimation(for: Shape.capsules[index], index: Shape.capsules[index].id)) {
                                 Shape.capsules[precededIndices].rotation += .a45
@@ -28,6 +27,8 @@ struct EnhacedPhotos: View {
             }
         }
         .scaledToFit()
+        .padding()
+        .scaleEffect(0.7)
     }
     
     func dealAnimation(for shape: any View, index: Int) -> Animation {
