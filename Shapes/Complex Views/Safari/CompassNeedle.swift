@@ -81,7 +81,6 @@ struct CompassNeedle: View {
                 .foregroundColor(.white)
         }
     }
-    
 }
 
 struct Needle_Previews: PreviewProvider {

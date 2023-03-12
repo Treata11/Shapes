@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6104C2E629A8D49B0049FD69 /* TestBed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6104C2E529A8D49B0049FD69 /* TestBed.swift */; };
+		61076EFB29B8F49000764ABA /* RoundedPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61076EFA29B8F49000764ABA /* RoundedPlus.swift */; };
 		611594C329953C5B00E9E557 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611594C229953C5B00E9E557 /* Ring.swift */; };
 		611594C629953E8E00E9E557 /* Infinity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611594C529953E8E00E9E557 /* Infinity.swift */; };
 		61189B6F29981E8100623605 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61189B6E29981E8100623605 /* LoadingView.swift */; };
@@ -25,6 +26,7 @@
 		617BF7D6299D55E200EB3626 /* PhotosQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617BF7D5299D55E200EB3626 /* PhotosQueryView.swift */; };
 		61830004299ADABF00BCDD8C /* VividCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61830003299ADABF00BCDD8C /* VividCapsule.swift */; };
 		618A80BB29B7580C00ACE83B /* EnhancedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618A80BA29B7580C00ACE83B /* EnhancedPhotos.swift */; };
+		618C8E5629B7B1DE006694CE /* ChadT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C8E5529B7B1DE006694CE /* ChadT.swift */; };
 		6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A14229943C3900AC9AA2 /* Schwastika.swift */; };
 		6191A1452994431100AC9AA2 /* Octagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A1442994431100AC9AA2 /* Octagram.swift */; };
 		6199D506299A8DEA003F5C74 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199D505299A8DEA003F5C74 /* Photos.swift */; };
@@ -56,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		6104C2E529A8D49B0049FD69 /* TestBed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBed.swift; sourceTree = "<group>"; };
+		61076EFA29B8F49000764ABA /* RoundedPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedPlus.swift; sourceTree = "<group>"; };
 		611594C229953C5B00E9E557 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		611594C529953E8E00E9E557 /* Infinity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infinity.swift; sourceTree = "<group>"; };
 		61189B6E29981E8100623605 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		617BF7D5299D55E200EB3626 /* PhotosQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosQueryView.swift; sourceTree = "<group>"; };
 		61830003299ADABF00BCDD8C /* VividCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VividCapsule.swift; sourceTree = "<group>"; };
 		618A80BA29B7580C00ACE83B /* EnhancedPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedPhotos.swift; sourceTree = "<group>"; };
+		618C8E5529B7B1DE006694CE /* ChadT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChadT.swift; sourceTree = "<group>"; };
 		6191A14229943C3900AC9AA2 /* Schwastika.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schwastika.swift; sourceTree = "<group>"; };
 		6191A1442994431100AC9AA2 /* Octagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagram.swift; sourceTree = "<group>"; };
 		6199D505299A8DEA003F5C74 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61076EF929B8F47800764ABA /* Mathematical */ = {
+			isa = PBXGroup;
+			children = (
+				61076EFA29B8F49000764ABA /* RoundedPlus.swift */,
+			);
+			path = Mathematical;
+			sourceTree = "<group>";
+		};
 		611594C429953E7E00E9E557 /* Symbols */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 		613E0DE1299532E9005F77F3 /* Complex Views */ = {
 			isa = PBXGroup;
 			children = (
+				618C8E5429B7B1CC006694CE /* ChadT */,
 				6140D1D029A8AB7500A2DFF7 /* Clock  */,
 				61830002299ADA9C00BCDD8C /* Photos */,
 				611E349A299A5B4A005994E6 /* Settings */,
@@ -194,6 +207,14 @@
 			path = Photos;
 			sourceTree = "<group>";
 		};
+		618C8E5429B7B1CC006694CE /* ChadT */ = {
+			isa = PBXGroup;
+			children = (
+				618C8E5529B7B1DE006694CE /* ChadT.swift */,
+			);
+			path = ChadT;
+			sourceTree = "<group>";
+		};
 		61ACD1D12986C83B00F9FFB9 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +234,7 @@
 		61ACD1DC2986C83B00F9FFB9 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				61076EF929B8F47800764ABA /* Mathematical */,
 				611594C229953C5B00E9E557 /* Ring.swift */,
 				611594C429953E7E00E9E557 /* Symbols */,
 				613E0DE1299532E9005F77F3 /* Complex Views */,
@@ -384,12 +406,14 @@
 				613E0DE329953310005F77F3 /* SettingsGear.swift in Sources */,
 				6140D1D229A8AB8200A2DFF7 /* ClockFace.swift in Sources */,
 				61F4236529A6CB5800F51F74 /* PropertyWrappers.swift in Sources */,
+				618C8E5629B7B1DE006694CE /* ChadT.swift in Sources */,
 				612C094F29911B4500247E0F /* BadgeBackground.swift in Sources */,
 				61ACD1ED2986C86700F9FFB9 /* Trapezoid.swift in Sources */,
 				61FF285229903C3B000B291C /* UtilityExtensions.swift in Sources */,
 				61E8F477299E6A4200C18EDF /* SettingsIcon.swift in Sources */,
 				61AFFB5B2996CFAB002A5A28 /* Gear.swift in Sources */,
 				61DE5DC329942E1900CE1833 /* EquilateralTriangle.swift in Sources */,
+				61076EFB29B8F49000764ABA /* RoundedPlus.swift in Sources */,
 				61FF2856299042B3000B291C /* Heart.swift in Sources */,
 				611E349C299A5BBB005994E6 /* SafariCompass.swift in Sources */,
 				61ACD1EF2986C8A000F9FFB9 /* ContentView.swift in Sources */,

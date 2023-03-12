@@ -179,6 +179,7 @@ struct Dials: View {
             }
             .foregroundColor(.white)
         }
+        .shadow(radius: 5)
         .scaledToFit()
     }
 }

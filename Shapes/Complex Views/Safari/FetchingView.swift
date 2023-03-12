@@ -32,6 +32,7 @@ private struct RotatingCompassNeedle: View {
             CompassNeedle()
         }
         .rotationEffect(angle)
+        .shadow(radius: 10)
     }
 }
 

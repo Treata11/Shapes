@@ -84,13 +84,12 @@ struct RotatedGearPillars: View {
 struct WheelDrivePillars: View {
     var body: some View {
         ZStack {
-            GeometryReader { geometry in
-                ForEach(0..<3) { index in
-                    RotatedGearPillars(
-                        angle: .degrees(Double(index)) * 120
-                    )   // (index / 3) * 360
-                }
+            ForEach(0..<3) { index in
+                RotatedGearPillars(
+                    angle: .degrees(Double(index)) * 120
+                )   // (index / 3) * 360
             }
+            .shadow(radius: 5)
             .aspectRatio(1, contentMode: .fit)
             .rotationEffect(.degrees(-34))
         }
