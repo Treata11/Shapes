@@ -31,6 +31,7 @@
 		6191A1452994431100AC9AA2 /* Octagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6191A1442994431100AC9AA2 /* Octagram.swift */; };
 		6199D506299A8DEA003F5C74 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199D505299A8DEA003F5C74 /* Photos.swift */; };
 		61A35DC7299A1B6800AEDEEB /* Dials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A35DC6299A1B6800AEDEEB /* Dials.swift */; };
+		61A7AA5C29C319FA0023515E /* _EnhancedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A7AA5B29C319FA0023515E /* _EnhancedPhotos.swift */; };
 		61ACD1DE2986C83B00F9FFB9 /* ShapesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */; };
 		61ACD1E22986C83C00F9FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */; };
 		61ACD1E62986C83C00F9FFB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61ACD1E52986C83C00F9FFB9 /* Preview Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		6191A1442994431100AC9AA2 /* Octagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagram.swift; sourceTree = "<group>"; };
 		6199D505299A8DEA003F5C74 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		61A35DC6299A1B6800AEDEEB /* Dials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dials.swift; sourceTree = "<group>"; };
+		61A7AA5B29C319FA0023515E /* _EnhancedPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _EnhancedPhotos.swift; sourceTree = "<group>"; };
 		61ACD1DA2986C83B00F9FFB9 /* Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61ACD1DD2986C83B00F9FFB9 /* ShapesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesApp.swift; sourceTree = "<group>"; };
 		61ACD1E12986C83C00F9FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,8 +201,8 @@
 		61830002299ADA9C00BCDD8C /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				61A7AA5829C316050023515E /* Enhanced  */,
 				6199D505299A8DEA003F5C74 /* Photos.swift */,
-				618A80BA29B7580C00ACE83B /* EnhancedPhotos.swift */,
 				61830003299ADABF00BCDD8C /* VividCapsule.swift */,
 				617BF7D5299D55E200EB3626 /* PhotosQueryView.swift */,
 			);
@@ -213,6 +215,15 @@
 				618C8E5529B7B1DE006694CE /* ChadT.swift */,
 			);
 			path = ChadT;
+			sourceTree = "<group>";
+		};
+		61A7AA5829C316050023515E /* Enhanced  */ = {
+			isa = PBXGroup;
+			children = (
+				618A80BA29B7580C00ACE83B /* EnhancedPhotos.swift */,
+				61A7AA5B29C319FA0023515E /* _EnhancedPhotos.swift */,
+			);
+			path = "Enhanced ";
 			sourceTree = "<group>";
 		};
 		61ACD1D12986C83B00F9FFB9 = {
@@ -372,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A7AA5C29C319FA0023515E /* _EnhancedPhotos.swift in Sources */,
 				61A35DC7299A1B6800AEDEEB /* Dials.swift in Sources */,
 				61FF285429903E21000B291C /* Diamond.swift in Sources */,
 				61B0165B29915E5800CB820E /* Badge.swift in Sources */,

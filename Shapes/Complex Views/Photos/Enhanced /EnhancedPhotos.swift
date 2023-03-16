@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct EnhacedPhotos: View {
-    @State var rotationAngle: Angle = .a45
+//    @State var angle0: Angle = .a0
+//    @State var angle1: Angle = .a45
+//    @State var angle2: Angle = .a90
+//    @State var angle3: Angle = .degrees(135)
+//    @State var angle4: Angle = .a180
+//    @State var angle5: Angle = .degrees(225)
+//    @State var angle6: Angle = .a270
+//    @State var angle7: Angle = .degrees(315)
     
     var body: some View {
         ZStack {
             ForEach(0..<8) { index in
                 var precededIndices = index
                 Shape.capsules[index]
-                    .onHover { _ in
+                    .onAppear() { 
                         while precededIndices >= 0 {
                             withAnimation(dealAnimation(for: Shape.capsules[index], index: Shape.capsules[index].id)) {
                                 Shape.capsules[precededIndices].rotation += .a45
                                     precededIndices -= 1
-//                                    Capsule.shapes[index].rotation += rotationAngle
                             }
                         }
                     }
@@ -41,14 +47,14 @@ struct EnhacedPhotos: View {
 }
 
 private struct RotatedCapsule: View, Identifiable {
-    var id: Int
+    let id: Int
     let color: Color
     var rotation: Angle
     
-//    var animatableData: Angle {
-//        get { rotation }
-//        set { rotation = newValue }
-//    }
+    var animatableData: Angle {
+        get { rotation }
+        set { rotation = newValue }
+    }
     
     var body: some View {
         NegarinCapsule()
@@ -58,15 +64,19 @@ private struct RotatedCapsule: View, Identifiable {
 }
 
 private struct Shape {
+    @State static var angle: Array<Angle> = [
+        .a0, .a45, .a90, .degrees(135), .a180, .degrees(225), .a270, .degrees(315)
+    ]
+    
     static var capsules = [
-        RotatedCapsule(id: 0, color: ColorConstants.colors[0], rotation: .a0),
-        RotatedCapsule(id: 1, color: ColorConstants.colors[1], rotation: .a45),
-        RotatedCapsule(id: 2, color: ColorConstants.colors[2], rotation: .a90),
-        RotatedCapsule(id: 3, color: ColorConstants.colors[3], rotation: .degrees(135)),
-        RotatedCapsule(id: 4, color: ColorConstants.colors[4], rotation: .a180),
-        RotatedCapsule(id: 5, color: ColorConstants.colors[5], rotation: .degrees(225)),
-        RotatedCapsule(id: 6, color: ColorConstants.colors[6], rotation: .a270),
-        RotatedCapsule(id: 7, color: ColorConstants.colors[7], rotation: .degrees(315)),
+        RotatedCapsule(id: 0, color: ColorConstants.colors[0], rotation: angle[0]),
+        RotatedCapsule(id: 1, color: ColorConstants.colors[1], rotation: angle[1]),
+        RotatedCapsule(id: 2, color: ColorConstants.colors[2], rotation: angle[2]),
+        RotatedCapsule(id: 3, color: ColorConstants.colors[3], rotation: angle[3]),
+        RotatedCapsule(id: 4, color: ColorConstants.colors[4], rotation: angle[4]),
+        RotatedCapsule(id: 5, color: ColorConstants.colors[5], rotation: angle[5]),
+        RotatedCapsule(id: 6, color: ColorConstants.colors[6], rotation: angle[6]),
+        RotatedCapsule(id: 7, color: ColorConstants.colors[7], rotation: angle[7]),
     ]
 }
 
