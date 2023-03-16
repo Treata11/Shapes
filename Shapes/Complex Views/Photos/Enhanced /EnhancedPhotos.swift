@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct EnhacedPhotos: View {
+    @State static var angle: Array<Angle> = [
+        .a0, .a45, .a90, .degrees(135), .a180, .degrees(225), .a270, .degrees(315)
+    ]
 //    @State var angle0: Angle = .a0
 //    @State var angle1: Angle = .a45
 //    @State var angle2: Angle = .a90
@@ -25,7 +28,8 @@ struct EnhacedPhotos: View {
                     .onAppear() { 
                         while precededIndices >= 0 {
                             withAnimation(dealAnimation(for: Shape.capsules[index], index: Shape.capsules[index].id)) {
-                                Shape.capsules[precededIndices].rotation += .a45
+                                EnhacedPhotos.angle[precededIndices] += .a45
+//                                Shape.capsules[precededIndices].rotation += .a45
                                     precededIndices -= 1
                             }
                         }
@@ -44,6 +48,19 @@ struct EnhacedPhotos: View {
             .repeatForever(autoreverses: false)
             .delay(delay)
     }
+    
+    private struct Shape {
+        static var capsules = [
+            RotatedCapsule(id: 0, color: ColorConstants.colors[0], rotation: angle[0]),
+            RotatedCapsule(id: 1, color: ColorConstants.colors[1], rotation: angle[1]),
+            RotatedCapsule(id: 2, color: ColorConstants.colors[2], rotation: angle[2]),
+            RotatedCapsule(id: 3, color: ColorConstants.colors[3], rotation: angle[3]),
+            RotatedCapsule(id: 4, color: ColorConstants.colors[4], rotation: angle[4]),
+            RotatedCapsule(id: 5, color: ColorConstants.colors[5], rotation: angle[5]),
+            RotatedCapsule(id: 6, color: ColorConstants.colors[6], rotation: angle[6]),
+            RotatedCapsule(id: 7, color: ColorConstants.colors[7], rotation: angle[7]),
+        ]
+    }
 }
 
 private struct RotatedCapsule: View, Identifiable {
@@ -61,23 +78,6 @@ private struct RotatedCapsule: View, Identifiable {
             .rotationEffect(rotation, anchor: .center)
             .foregroundColor(color)
     }
-}
-
-private struct Shape {
-    @State static var angle: Array<Angle> = [
-        .a0, .a45, .a90, .degrees(135), .a180, .degrees(225), .a270, .degrees(315)
-    ]
-    
-    static var capsules = [
-        RotatedCapsule(id: 0, color: ColorConstants.colors[0], rotation: angle[0]),
-        RotatedCapsule(id: 1, color: ColorConstants.colors[1], rotation: angle[1]),
-        RotatedCapsule(id: 2, color: ColorConstants.colors[2], rotation: angle[2]),
-        RotatedCapsule(id: 3, color: ColorConstants.colors[3], rotation: angle[3]),
-        RotatedCapsule(id: 4, color: ColorConstants.colors[4], rotation: angle[4]),
-        RotatedCapsule(id: 5, color: ColorConstants.colors[5], rotation: angle[5]),
-        RotatedCapsule(id: 6, color: ColorConstants.colors[6], rotation: angle[6]),
-        RotatedCapsule(id: 7, color: ColorConstants.colors[7], rotation: angle[7]),
-    ]
 }
 
 private struct ColorConstants {
