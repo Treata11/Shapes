@@ -17,6 +17,7 @@
 		611E349E299A5FEA005994E6 /* FetchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611E349D299A5FEA005994E6 /* FetchingView.swift */; };
 		6128A6E92995008B003ED4FD /* Decagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6E82995008B003ED4FD /* Decagram.swift */; };
 		6128A6EB2995021F003ED4FD /* Dodecagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6128A6EA2995021F003ED4FD /* Dodecagram.swift */; };
+		6129A1B829C77C3F0064CC73 /* DancingLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6129A1B729C77C3F0064CC73 /* DancingLines.swift */; };
 		612C09492990F66700247E0F /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C09482990F66700247E0F /* Pentagon.swift */; };
 		612C094D299117B900247E0F /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C094C299117B900247E0F /* HexagonParameters.swift */; };
 		612C094F29911B4500247E0F /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C094E29911B4500247E0F /* BadgeBackground.swift */; };
@@ -68,6 +69,7 @@
 		611E349D299A5FEA005994E6 /* FetchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingView.swift; sourceTree = "<group>"; };
 		6128A6E82995008B003ED4FD /* Decagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decagram.swift; sourceTree = "<group>"; };
 		6128A6EA2995021F003ED4FD /* Dodecagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dodecagram.swift; sourceTree = "<group>"; };
+		6129A1B729C77C3F0064CC73 /* DancingLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DancingLines.swift; sourceTree = "<group>"; };
 		612C09482990F66700247E0F /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
 		612C094C299117B900247E0F /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 		612C094E29911B4500247E0F /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		6129A1B629C77C200064CC73 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				6129A1B729C77C3F0064CC73 /* DancingLines.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		612C094A2991046D00247E0F /* Polygon */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +255,7 @@
 		61ACD1DC2986C83B00F9FFB9 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				6129A1B629C77C200064CC73 /* Charts */,
 				61076EF929B8F47800764ABA /* Mathematical */,
 				611594C229953C5B00E9E557 /* Ring.swift */,
 				611594C429953E7E00E9E557 /* Symbols */,
@@ -390,6 +401,7 @@
 				6104C2E629A8D49B0049FD69 /* TestBed.swift in Sources */,
 				61DE5DBF2994123B00CE1833 /* Hexagram.swift in Sources */,
 				61FF285A29904673000B291C /* Club.swift in Sources */,
+				6129A1B829C77C3F0064CC73 /* DancingLines.swift in Sources */,
 				6191A14329943C3900AC9AA2 /* Schwastika.swift in Sources */,
 				61189B6F29981E8100623605 /* LoadingView.swift in Sources */,
 				61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */,

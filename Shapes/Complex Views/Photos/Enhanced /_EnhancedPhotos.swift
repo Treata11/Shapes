@@ -22,78 +22,105 @@ struct Photo: View {
     
     var body: some View {
         ZStack {
-            ForEach(0..<8) { index in
-                RotatedCapsule(id: index, color: ColorConstants.colors[index], rotation: angle[index])
-                    .onAppear() {
-                        var precededIndices = index
-                        while precededIndices >= 0 {
-                            withAnimation(dealAnimation(
-                                for: RotatedCapsule(
-                                    id: precededIndices,
-                                    color: ColorConstants.colors[precededIndices],
-                                    rotation: angle[precededIndices]
-                                ),
-                                index: precededIndices)) {
-                                angle[precededIndices] += .a45
-                                precededIndices -= 1
-                            }
-                        }
-                    }
+//            ForEach(0..<8) { index in
+//                RotatedCapsule(id: index, color: ColorConstants.colors[index], rotation: angle[index])
+//                    .onAppear() {
+//                        var precededIndices = index
+//                        while precededIndices >= 0 {
+//                            withAnimation(dealAnimation(
+//                                for: RotatedCapsule(
+//                                    id: precededIndices,
+//                                    color: ColorConstants.colors[precededIndices],
+//                                    rotation: angle[precededIndices]
+//                                ),
+//                                index: precededIndices)) {
+//                                angle[precededIndices] += .a45
+//                                precededIndices -= 1
+//                            }
+//                        }
+//                    }
+//            }
+            
+            
+            
+            
+            
+            RotatedCapsule(id: 0, color: ColorConstants.colors[0], rotation: angle0)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(0)) {
+                        angle0 += .a45
+                }
             }
-            
-            
-            
-//            RotatedCapsule(id: 0, color: ColorConstants.colors[0], rotation: angle0)
-//                .onAppear() {
-//                    withAnimation(.easeInOut(duration: 0.5).delay(0)) {
-//                        angle0 += .a45
-//                }
-//            }
-//            RotatedCapsule(id: 1, color: ColorConstants.colors[1], rotation: angle1)
-//                .onAppear() {
-//                    withAnimation(.easeInOut(duration: 0.5).delay(0.5)) {
-//                        angle0 += .a45
-//                        angle1 += .a45
-//                }
-//            }
-//            RotatedCapsule(id: 2, color: ColorConstants.colors[2], rotation: angle2)
-//                .onAppear() {
-//                    withAnimation(.easeInOut(duration: 0.5).delay(1)) {
-//                        angle0 += .a45
-//                        angle1 += .a45
-//                        angle2 += .a45
-//                }
-//            }
-//            RotatedCapsule(id: 3, color: ColorConstants.colors[3], rotation: angle3)
-//                .onAppear() {
-//                    withAnimation(.easeInOut(duration: 0.5).delay(1.5)) {
-//                        angle0 += .a45
-//                        angle1 += .a45
-//                        angle2 += .a45
-//                        angle3 += .a45
-//                }
-//            }
-//            RotatedCapsule(id: 4, color: ColorConstants.colors[4], rotation: angle4)
-//                .onAppear() {
-//                    withAnimation(.easeInOut(duration: 0.5).delay(2)) {
-//                        angle0 += .a45
-//                        angle1 += .a45
-//                        angle2 += .a45
-//                        angle3 += .a45
-//                        angle4 += .a45
-//                }
-//            }
-//            RotatedCapsule(id: 5, color: ColorConstants.colors[5], rotation: angle5)
-//                .onAppear() {
-//                    withAnimation(.easeInOut(duration: 0.5).delay(2.5)) {
-//                        angle0 += .a45
-//                        angle1 += .a45
-//                        angle2 += .a45
-//                        angle3 += .a45
-//                        angle4 += .a45
-//                        angle5 += .a45
-//                }
-//            }
+            RotatedCapsule(id: 1, color: ColorConstants.colors[1], rotation: angle1)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(0.5)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                }
+            }
+            RotatedCapsule(id: 2, color: ColorConstants.colors[2], rotation: angle2)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(1)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                        angle2 += .a45
+                }
+            }
+            RotatedCapsule(id: 3, color: ColorConstants.colors[3], rotation: angle3)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(1.5)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                        angle2 += .a45
+                        angle3 += .a45
+                }
+            }
+            RotatedCapsule(id: 4, color: ColorConstants.colors[4], rotation: angle4)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(2)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                        angle2 += .a45
+                        angle3 += .a45
+                        angle4 += .a45
+                }
+            }
+            RotatedCapsule(id: 5, color: ColorConstants.colors[5], rotation: angle5)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(2.5)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                        angle2 += .a45
+                        angle3 += .a45
+                        angle4 += .a45
+                        angle5 += .a45
+                }
+            }
+            RotatedCapsule(id: 6, color: ColorConstants.colors[6], rotation: angle6)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(3)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                        angle2 += .a45
+                        angle3 += .a45
+                        angle4 += .a45
+                        angle5 += .a45
+                        angle6 += .a45
+                }
+            }
+            RotatedCapsule(id: 7, color: ColorConstants.colors[7], rotation: angle7)
+                .onAppear() {
+                    withAnimation(.easeInOut(duration: 0.5).delay(3.5)) {
+                        angle0 += .a45
+                        angle1 += .a45
+                        angle2 += .a45
+                        angle3 += .a45
+                        angle4 += .a45
+                        angle5 += .a45
+                        angle6 += .a45
+                        angle7 += .a45
+                }
+            }
             
         }
         .scaledToFit()
@@ -110,7 +137,12 @@ struct Photo: View {
 private struct RotatedCapsule: View, Identifiable {
     let id: Int
     let color: Color
-    let rotation: Angle
+    var rotation: Angle
+    
+    var animatableData: Angle {
+        get { rotation }
+        set { rotation = newValue}
+    }
     
     var body: some View {
         NegarinCapsule()
