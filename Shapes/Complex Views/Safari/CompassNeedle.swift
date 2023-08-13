@@ -68,7 +68,7 @@ private struct RotatedHalfNeedle: View {
     }
 }
 
-struct CompassNeedle: View {
+struct CompassNeedle: View, Animatable {
     var Needle: some View {
         RotatedHalfNeedle(angle: .a180)
     }
@@ -83,8 +83,19 @@ struct CompassNeedle: View {
     }
 }
 
+struct CompassNeedle3D: View {  // TODO: Create a shadow on the right side
+    var body: some View {
+        ZStack {
+            CompassNeedle()
+            CompassNeedle().aspectRatio(1/1, contentMode: .fit)
+                .shadow(radius: 1)
+                .scaleEffect(1)
+        }
+    }
+}
+
 struct Needle_Previews: PreviewProvider {
     static var previews: some View {
-        CompassNeedle()
+        CompassNeedle3D()
     }
 }

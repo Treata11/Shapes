@@ -215,10 +215,44 @@ struct TestBeddingScalarAnimatedText: View {
     }
 }
 
-struct TestBeddingScalarAnimatedText_Previews: PreviewProvider {
+//struct TestBeddingScalarAnimatedText_Previews: PreviewProvider {
+//    static var previews: some View {
+////        ScalarAnimatedText(name: "Init", text: "Hello, World!", fontScale: 1000)
+////            .padding()
+//        TestBeddingScalarAnimatedText()
+//    }
+//}
+
+struct SwiftUIView: View {
+    let cornerSize: CGSize = CGSize(width: 25, height: 25)
+    
+    var body: some View {
+        RoundedRectangle(cornerSize: cornerSize)
+            .strokeBorder(Color.blue, lineWidth: 5)
+            .frame(width: 100, height: 100)
+            .animation(.timingCurve(0.0, 1.0, 0.1, 1.0, duration: 5.0))
+//            .speed(2)
+//            .animation(.linear(duration: 15))\
+    }
+}
+
+//struct SwiftUIView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SwiftUIView()
+//    }
+//}
+
+// Create a view
+struct MyAnimatableShape: View {
+    var body: some View {
+        Triangle()
+            .animation(.timingCurve(0.0, 1.0, 0.1, 1.0, duration: 5.0))
+//            .speed(2)
+    }
+}
+
+struct MyAnimatableShape_Previews: PreviewProvider {
     static var previews: some View {
-//        ScalarAnimatedText(name: "Init", text: "Hello, World!", fontScale: 1000)
-//            .padding()
-        TestBeddingScalarAnimatedText()
+        MyAnimatableShape()
     }
 }
