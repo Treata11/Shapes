@@ -1,5 +1,5 @@
 //
-//  Apple.swift
+//  Apple__.swift
 //  Shapes
 //
 //  Created by Treata Norouzi on 8/13/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-private struct AppleLogoParameters {
+private struct AppleLogoParameters__ {
     struct Segment {
         let line: CGPoint
         let curve: CGPoint
@@ -61,7 +61,7 @@ private struct AppleLogoParameters {
     ]
 }
 
-struct AppleLogo: View {
+struct AppleLogo__: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
@@ -69,7 +69,7 @@ struct AppleLogo: View {
                 let height = width * 1.3
 
                 path.move(to: CGPoint(x: 0.5 * width, y: 0.05 * height))
-                AppleLogoParameters.segments.forEach { segment in
+                AppleLogoParameters__.segments.forEach { segment in
                     path.addLine(to: CGPoint(x: segment.line.x * width, y: segment.line.y * height))
                     path.addQuadCurve(to: CGPoint(x: segment.curve.x * width, y: segment.curve.y * height), control: CGPoint(x: segment.control.x * width, y: segment.control.y * height))
                 }
@@ -82,7 +82,7 @@ struct AppleLogo: View {
 
 struct AppleLogo_Previews: PreviewProvider {
     static var previews: some View {
-        AppleLogo().foregroundColor(.accentColor)
+        AppleLogo__().foregroundColor(.accentColor)
 //            .blendMode()
     }
 }
