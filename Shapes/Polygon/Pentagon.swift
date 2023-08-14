@@ -8,15 +8,6 @@
 import SwiftUI
 
 private struct PentagonParameters {
-    
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    static let adjustment: CGFloat = 0.0
-    
     static let segments = [
         Segment(    /// α
             line: CGPoint(x: 1.9510565, y: 0.690983),

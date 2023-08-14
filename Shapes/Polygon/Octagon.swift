@@ -7,16 +7,7 @@
 
 import SwiftUI
 
-private struct OctagonParameters {
-    
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    static let adjustment: CGFloat = -0.30666
-    
+private struct OctagonParameters { 
     static let segments = [
         Segment(
             line: CGPoint(x: 1.3827, y: 0.07612),  // Top Right

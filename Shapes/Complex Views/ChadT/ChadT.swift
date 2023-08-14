@@ -8,15 +8,6 @@
 import SwiftUI
 
 private struct ChadTParameters {
-    
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    static let adjustment: CGFloat = 0.0
-    
     static let segments = [
         Segment(    /// α
             line: CGPoint(x: 19.510565, y: 6.90983),

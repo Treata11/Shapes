@@ -8,14 +8,7 @@
 import SwiftUI
 
 private struct EquilateralTriangleParameters {
-    
-        struct Segment {
-            let line: CGPoint
-            let curve: CGPoint
-            let control: CGPoint
-        }
-    
-        static let segments = [
+    static let segments = [
             Segment(    /// ζ
                 line: CGPoint(x: 1.8660254, y: 1.5),
                 curve: CGPoint(x: 1.0, y: 1.0),

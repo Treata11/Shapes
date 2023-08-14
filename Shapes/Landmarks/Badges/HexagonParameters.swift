@@ -8,16 +8,6 @@
 import CoreGraphics
 
 struct HexagonParameterz {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-        /// holds the three points that represent one side of the hexagon
-    }
-    // The values are stored as a fraction of a unit square
-    // having its origin in the upper left,
-    // with positive x to the right and positive y down.
-
     static let adjustment: CGFloat = 0.085
 
     static let segments = [

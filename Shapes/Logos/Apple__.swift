@@ -9,14 +9,6 @@ import SwiftUI
 
 
 private struct AppleLogoParameters__ {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    static let adjustment: CGFloat = 0.0
-    
     static let segments = [
         Segment(
             line: CGPoint(x: 0.05, y: 0.5),

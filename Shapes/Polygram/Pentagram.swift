@@ -8,15 +8,6 @@
 import SwiftUI
 
 private struct PentagramParameters {
-    
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    static let adjustment: CGFloat = 0.0
-    
     static let segments = [
         Segment(    /// α
             line: CGPoint(x: 1.951057, y: 0.690983),

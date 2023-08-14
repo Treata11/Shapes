@@ -8,15 +8,6 @@
 import SwiftUI
 
 private struct HexagonParameters {
-    
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    static let adjustment: CGFloat = 0.0
-    
     static let segments = [
         Segment(
             line: CGPoint(x: 2, y: 1),  // Top Right

@@ -8,12 +8,6 @@
 import SwiftUI
 
 private struct NeedleParameters {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
     static let segments  = [
         Segment(    /// α
             line: CGPoint(x: 85, y: 5),

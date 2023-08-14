@@ -7,13 +7,7 @@
 
 import SwiftUI
 
-struct SchwastikaParameters {
-    struct Segment {
-            let line: CGPoint
-            let curve: CGPoint
-            let control: CGPoint
-        }
-    
+struct SchwastikaParameters {    
         static let segments = [
             Segment(
                 line: CGPoint(x: 5, y: 0),

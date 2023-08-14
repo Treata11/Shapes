@@ -8,12 +8,6 @@
 import SwiftUI
 
 struct MainDialParameters {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
     static let segments  = [
         Segment(    /// α
             line: CGPoint(x: 84.4, y: 5),
@@ -39,12 +33,6 @@ struct MainDialParameters {
 }
 
 struct SubDialParameters {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
     static let segments  = [
         Segment(    /// α
             line: CGPoint(x: 84.4, y: 5),

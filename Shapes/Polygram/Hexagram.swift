@@ -25,15 +25,6 @@ struct Hexagram: View, Animatable {
 // MARK: - Segmential approach
 
 //struct HexagramParameters {
-//
-//    struct Segment {
-//        let line: CGPoint
-//        let curve: CGPoint
-//        let control: CGPoint
-//    }
-//
-//    static let adjustment: CGFloat = 0.0
-//
 //    static let segment1 = [
 //        Segment(    /// α
 //            line: CGPoint(x: 1.8660254, y: 0.5),
