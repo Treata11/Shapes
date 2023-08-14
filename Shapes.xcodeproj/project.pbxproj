@@ -25,6 +25,8 @@
 		6140D1D229A8AB8200A2DFF7 /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140D1D129A8AB8200A2DFF7 /* ClockFace.swift */; };
 		6154934D2A8A2F5100F2D7DA /* Apple_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6154934C2A8A2F5100F2D7DA /* Apple_.swift */; };
 		6154934F2A8A56FB00F2D7DA /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6154934E2A8A56FB00F2D7DA /* Segment.swift */; };
+		615493522A8AAFB500F2D7DA /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = 615493512A8AAFB500F2D7DA /* SVGView */; };
+		615493542A8AB00D00F2D7DA /* Apple_logo_black.svg in Resources */ = {isa = PBXBuildFile; fileRef = 615493532A8AB00D00F2D7DA /* Apple_logo_black.svg */; };
 		617017852991A3C200A1299E /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617017842991A3C200A1299E /* Hexagon.swift */; };
 		617BF7D6299D55E200EB3626 /* PhotosQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617BF7D5299D55E200EB3626 /* PhotosQueryView.swift */; };
 		61830004299ADABF00BCDD8C /* VividCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61830003299ADABF00BCDD8C /* VividCapsule.swift */; };
@@ -80,6 +82,7 @@
 		6140D1D129A8AB8200A2DFF7 /* ClockFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFace.swift; sourceTree = "<group>"; };
 		6154934C2A8A2F5100F2D7DA /* Apple_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_.swift; sourceTree = "<group>"; };
 		6154934E2A8A56FB00F2D7DA /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		615493532A8AB00D00F2D7DA /* Apple_logo_black.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apple_logo_black.svg; sourceTree = "<group>"; };
 		617017842991A3C200A1299E /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		617BF7D5299D55E200EB3626 /* PhotosQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosQueryView.swift; sourceTree = "<group>"; };
 		61830003299ADABF00BCDD8C /* VividCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VividCapsule.swift; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615493522A8AAFB500F2D7DA /* SVGView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,7 @@
 		61ACD1E42986C83C00F9FFB9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				615493532A8AB00D00F2D7DA /* Apple_logo_black.svg */,
 				61ACD1E52986C83C00F9FFB9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -357,6 +362,9 @@
 			dependencies = (
 			);
 			name = Shapes;
+			packageProductDependencies = (
+				615493512A8AAFB500F2D7DA /* SVGView */,
+			);
 			productName = Shapes;
 			productReference = 61ACD1DA2986C83B00F9FFB9 /* Shapes.app */;
 			productType = "com.apple.product-type.application";
@@ -385,6 +393,9 @@
 				Base,
 			);
 			mainGroup = 61ACD1D12986C83B00F9FFB9;
+			packageReferences = (
+				615493502A8AAFB500F2D7DA /* XCRemoteSwiftPackageReference "SVGView" */,
+			);
 			productRefGroup = 61ACD1DB2986C83B00F9FFB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,6 +412,7 @@
 			files = (
 				61ACD1E62986C83C00F9FFB9 /* Preview Assets.xcassets in Resources */,
 				61ACD1E22986C83C00F9FFB9 /* Assets.xcassets in Resources */,
+				615493542A8AB00D00F2D7DA /* Apple_logo_black.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		615493502A8AAFB500F2D7DA /* XCRemoteSwiftPackageReference "SVGView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/SVGView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		615493512A8AAFB500F2D7DA /* SVGView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 615493502A8AAFB500F2D7DA /* XCRemoteSwiftPackageReference "SVGView" */;
+			productName = SVGView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61ACD1D22986C83B00F9FFB9 /* Project object */;
 }

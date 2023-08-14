@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SVGView
 
 struct AppleLogoParameters_ {
     // MARK: Apple
@@ -23,7 +24,7 @@ struct AppleLogoParameters_ {
         Segment(    // leftBottom
             line: CGPoint(x: 1086, y: 4166),
             curve: CGPoint(x: 0.17, y: 0.27),
-            control: CGPoint(x: 1696, y: 3800)
+            control: CGPoint(x: 1760, y: 3820)
         ),
         Segment(    // rightBottom
             line: CGPoint(x: 2456, y: 4161),
@@ -33,12 +34,12 @@ struct AppleLogoParameters_ {
         Segment(    // leftTop
             line: CGPoint(x: 1044, y: 1018),
             curve: CGPoint(x: 0.17, y: 0.27),
-            control: CGPoint(x: 0, y: 1538) // x: 0, y: 1638
+            control: CGPoint(x: 0, y: 1538)
         ),
         Segment(    // rightTop
             line: CGPoint(x: 2460, y: 1007),
             curve: CGPoint(x: 0.17, y: 0.27),
-            control: CGPoint(x: 1696, y: 1250)
+            control: CGPoint(x: 1696, y: 1385)
         ),
         Segment(    // midLeft
             line: CGPoint(x: 0, y: 2258),
@@ -67,12 +68,12 @@ struct AppleLogoParameters_ {
         Segment(        // Top
             line: CGPoint(x: 2523, y: 0),
             curve: CGPoint(x: 0.17, y: 0.27),
-            control: CGPoint(x: 1670, y: 90)
+            control: CGPoint(x: 1710, y: 155)
         ),
         Segment(        // Bottom
             line: CGPoint(x: 1688, y: 956),
             curve: CGPoint(x: 0.15, y: 0.25),
-            control: CGPoint(x: 2380, y: 788)
+            control: CGPoint(x: 2490, y: 885)
         ),
     ]
 }
@@ -80,7 +81,7 @@ struct AppleLogoParameters_ {
 struct AppleLogo_: View {
     var body: some View {
         GeometryReader { geometry in
-            let width = geometry.size.width/3392
+            let width = min(geometry.size.width, geometry.size.height)/3392
             let height = width//4167
         // MARK: - Drawing Constants
             // MARK: - Clamp
@@ -256,6 +257,7 @@ struct AppleLogo_: View {
             
             Path { path in
                 // MARK: - Clamp
+                // TODO: Replace with .addcurve(), check the variation in preview
                 path.move(to: clampBottom.line)
                 path.addQuadCurve(
                     to: clampTop.line,
@@ -269,11 +271,6 @@ struct AppleLogo_: View {
                 // MARK: - Apple
                 // Clockwise
                 path.move(to: leftTop.line)
-//                path.addCurve(
-//                    to: trailingUpperEdge.line,
-//                    control1: leftTop.control,
-//                    control2: trailingUpperEdge.control
-//                )
                 path.addQuadCurve(
                     to: rightTop.line,
                     control: rightTop.control
@@ -290,10 +287,6 @@ struct AppleLogo_: View {
                     to: rightBottom.line,
                     control: rightBottom.control
                 )
-//                path.addQuadCurve(
-//                    to: midBottom.line,
-//                    control: midBottom.control
-//                )
                 path.addQuadCurve(
                     to: leftBottom.line,
                     control: leftBottom.control
@@ -307,7 +300,7 @@ struct AppleLogo_: View {
                     control: leftTop.control
                 )
             }
-            .offset(CGSize(width: 0, height: -geometry.size.width*0.228479))
+            .offset(CGSize(width: 0, height: -geometry.size.width*0.1145))
         }
         .aspectRatio(contentMode: .fit) // aspect: 1.228479
     }
@@ -316,9 +309,9 @@ struct AppleLogo_: View {
 private struct Comparison: View {
     var body: some View {
         ZStack {
-            // TODO: replace the Rect with the SVG file of the logo
-            Rectangle().opacity(0.5)
-                .overlay(AppleLogo_().opacity(0.5).foregroundColor(.accentColor))
+            SVGView(contentsOf: Bundle.main.url(forResource: "Apple_logo_black", withExtension: "svg")!)
+                .opacity(0.2)
+                .overlay(AppleLogo_().opacity(0.7).foregroundColor(.accentColor))
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -331,37 +324,6 @@ struct AppleLogo__Previews: PreviewProvider {
     }
 }
 
-//struct TriangleParas {
-//    static let segments = [
-//        Segment(
-//            line: CGPoint(x: 120, y: 20),
-//            curve: CGPoint(x: 1, y: 1),
-//            control: CGPoint(x: 1, y: 1)
-//        ),
-//        Segment(
-//            line: CGPoint(x: 278, y: 380),
-//            curve: CGPoint(x: 1, y: 1),
-//            control: CGPoint(x: 1, y: 1)
-//        ),
-//        Segment(
-//            line: CGPoint(x: 50, y: 390),
-//            curve: CGPoint(x: 1, y: 1),
-//            control: CGPoint(x: 1, y: 1)
-//        )
-//    ]
-//}
-//
-//struct triangle: View {
-//    var body: some View {
-//        GeometryReader { geometry in
-//            Path { path in
-//                path.move(to: TriangleParas.segments[0].line)
-//                path.addLine(to: TriangleParas.segments[1].line)
-//                path.addLine(to: TriangleParas.segments[2].line)
-//                path.addLine(to: TriangleParas.segments[0].line)
-//            }
-//        }
-//        .aspectRatio(contentMode: .fit)
-//    }
-//}
-
+/// https://swiftpackageindex.com/mchoe/SwiftSVG
+///  https://swiftpackageindex.com/exyte/Macaw
+///  https://swiftpackageindex.com/exyte/SVGView  declarative https://github.com/exyte/SVGView
