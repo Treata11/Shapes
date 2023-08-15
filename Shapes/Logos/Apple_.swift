@@ -339,3 +339,30 @@ struct AppleLogo__Previews: PreviewProvider {
 /// https://swiftpackageindex.com/mchoe/SwiftSVG
 ///  https://swiftpackageindex.com/exyte/Macaw
 ///  https://swiftpackageindex.com/exyte/SVGView  declarative https://github.com/exyte/SVGView
+
+/*
+ LOGO
+
+ (3392, 4167)
+
+ Apple
+
+ TM: (x: 1696, y:1198)
+ MB: (x: 1696, y:4000)
+ LB: (x: 1086, y: 4166)
+ RB: (x: 2456, y: 4161)
+ LT: (x: 1044, y: 1018)
+ RT: (x: 2460, y: 1007)
+
+ ML: (x: 0, y: 2258)
+ MR: (x: 2833, y: 2215)
+
+ trailingLowerEdge: (x: 3392, y: 3060)
+ trailingUpperEdge: (x: 3284, y: 1420)
+
+
+ Clamp
+
+ B: (x: 1688, y: 956)
+ T: (x: 2523, y: 0)
+ */

@@ -5,7 +5,6 @@
 //  Created by Treata Norouzi on 8/15/23.
 //
 
-//import SwiftProtobuf
 import SwiftUI
 
 struct AppleLogo: Shape {
