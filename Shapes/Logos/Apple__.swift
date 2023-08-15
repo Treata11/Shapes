@@ -72,7 +72,7 @@ struct AppleLogo__: View {
     }
 }
 
-struct AppleLogo_Previews: PreviewProvider {
+struct AppleLogo___Previews: PreviewProvider {
     static var previews: some View {
         AppleLogo__().foregroundColor(.accentColor)
 //            .blendMode()

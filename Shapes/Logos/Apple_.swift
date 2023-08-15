@@ -259,14 +259,26 @@ struct AppleLogo_: View {
                 // MARK: - Clamp
                 // TODO: Replace with .addcurve(), check the variation in preview
                 path.move(to: clampBottom.line)
-                path.addQuadCurve(
+                // MARK: New Approach
+                path.addCurve(
                     to: clampTop.line,
-                    control: clampTop.control
+                    control1: CGPoint(x: 1690*width, y: 400*height),
+                    control2: CGPoint(x: 1720*width, y: 95*height)
                 )
-                path.addQuadCurve(
+                path.addCurve(
                     to: clampBottom.line,
-                    control: clampBottom.control
+                    control1: CGPoint(x: 2490*width, y: 885*height),
+                    control2: CGPoint(x: 2490*width, y: 885*height)
                 )
+                // MARK: -
+//                path.addQuadCurve(
+//                    to: clampTop.line,
+//                    control: clampTop.control
+//                )
+//                path.addQuadCurve(
+//                    to: clampBottom.line,
+//                    control: clampBottom.control
+//                )
                 path.closeSubpath()
                 // MARK: - Apple
                 // Clockwise

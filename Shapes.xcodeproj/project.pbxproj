@@ -46,6 +46,7 @@
 		61B01657299157B000CB820E /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B01656299157B000CB820E /* BadgeSymbol.swift */; };
 		61B0165929915D1700CB820E /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B0165829915D1700CB820E /* RotatedBadgeSymbol.swift */; };
 		61B0165B29915E5800CB820E /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B0165A29915E5800CB820E /* Badge.swift */; };
+		61B79F572A8BA7590021CA4A /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B79F562A8BA7590021CA4A /* Apple.swift */; };
 		61BF74E62A890A1900BB2E5F /* Apple__.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BF74E52A890A1900BB2E5F /* Apple__.swift */; };
 		61DE5DBC2993F35500CE1833 /* Pentagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DBB2993F35500CE1833 /* Pentagram.swift */; };
 		61DE5DBF2994123B00CE1833 /* Hexagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE5DBE2994123B00CE1833 /* Hexagram.swift */; };
@@ -104,6 +105,7 @@
 		61B01656299157B000CB820E /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		61B0165829915D1700CB820E /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		61B0165A29915E5800CB820E /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		61B79F562A8BA7590021CA4A /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 		61BF74E52A890A1900BB2E5F /* Apple__.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple__.swift; sourceTree = "<group>"; };
 		61DE5DBB2993F35500CE1833 /* Pentagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagram.swift; sourceTree = "<group>"; };
 		61DE5DBE2994123B00CE1833 /* Hexagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagram.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			children = (
 				61BF74E52A890A1900BB2E5F /* Apple__.swift */,
 				6154934C2A8A2F5100F2D7DA /* Apple_.swift */,
+				61B79F562A8BA7590021CA4A /* Apple.swift */,
 			);
 			path = Logos;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				61DE5DC329942E1900CE1833 /* EquilateralTriangle.swift in Sources */,
 				61076EFB29B8F49000764ABA /* RoundedPlus.swift in Sources */,
 				61FF2856299042B3000B291C /* Heart.swift in Sources */,
+				61B79F572A8BA7590021CA4A /* Apple.swift in Sources */,
 				611E349C299A5BBB005994E6 /* SafariCompass.swift in Sources */,
 				61ACD1EF2986C8A000F9FFB9 /* ContentView.swift in Sources */,
 			);
